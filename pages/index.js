@@ -6,18 +6,16 @@ import axios from 'axios';
 
 
 const Index = ({dados}) => (
-    <div>
+    <div key={dados.articles[1].id}>
         <h1>Últimas Noticias</h1>
 
 
         <h1>{dados.articles[1].title}</h1>
-        {/* <ul>
-            {dados.map(noticia => (
-            <li>
-                <h1>{noticia.articles[1].title}</h1>
-            </li>
-            ))}
-        </ul> */}
+        <img src={dados.articles[1].urlToImage}></img>
+        <p>{dados.articles[1].description}</p>
+        <article>{dados.articles[1].content}</article>
+        
+        
 
 <button type="button" class="btn btn-primary">Primary</button>
    
