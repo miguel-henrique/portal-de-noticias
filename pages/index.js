@@ -1,19 +1,26 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+
+
 import axios from 'axios';
 
 
-const Index = (dados) => (
+const Index = ({dados}) => (
     <div>
         <h1>Últimas Noticias</h1>
-        {console.log(dados)}
 
+
+        <h1>{dados.articles[1].title}</h1>
         {/* <ul>
             {dados.map(noticia => (
             <li>
-                <h1>{noticia.title}</h1>
+                <h1>{noticia.articles[1].title}</h1>
             </li>
             ))}
         </ul> */}
 
+<button type="button" class="btn btn-primary">Primary</button>
+   
     </div>
 );
 
