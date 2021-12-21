@@ -1,12 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-
+import { Button, Layout } from 'reactstrap';
 
 import axios from 'axios';
 
 
 const Index = ({dados}) => (
     <div key={dados.articles[1].id}>
+
+
+<Button color="danger">Danger!</Button>
+
        {/* <!-- As a link --> */}
 <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
