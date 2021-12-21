@@ -7,19 +7,52 @@ import axios from 'axios';
 
 const Index = ({dados}) => (
     <div key={dados.articles[1].id}>
-        <h1>Últimas Noticias</h1>
+       {/* <!-- As a link --> */}
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+  </div>
+</nav>
 
+{/* <!-- As a heading --> */}
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Últimas Noticias</span>
+  </div>
+</nav>
+        {console.log(dados)}
 
-        <h1>{dados.articles[1].title}</h1>
-        <img src={dados.articles[1].urlToImage}></img>
-        <p>{dados.articles[1].description}</p>
-        <article>{dados.articles[1].content}</article>
-        
-        
+<div>
+  <div class="row">
+    <div class="col">
+    {dados.articles[0].title}
+    <img src={dados.articles[0].urlToImage} class="rounded mx-auto d-block" width={500} alt="..."></img>
 
-<button type="button" class="btn btn-primary">Primary</button>
-   
     </div>
+    <div class="col">
+    {dados.articles[1].title}
+    <img src={dados.articles[1].urlToImage} class="rounded mx-auto d-block" width={500} alt="..."></img>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+    {dados.articles[2].title}
+    <img src={dados.articles[2].urlToImage} class="rounded mx-auto d-block" width={500} alt="..."></img>
+    </div>
+    <div class="col">
+    {dados.articles[3].title}
+    <img src={dados.articles[3].urlToImage} class="rounded mx-auto d-block" width={500} alt="..."></img>
+    </div>
+    <div class="col">
+    {dados.articles[4].title}
+    <img src={dados.articles[4].urlToImage} class="rounded mx-auto d-block" width={500} alt="..."></img>
+    </div>
+  </div>
+</div>
+ 
+    </div>
+
+    
 );
 
 
@@ -28,17 +61,10 @@ Index.getInitialProps = async () =>{
         'https://newsapi.org/v2/top-headlines?country=br&apiKey=c6595ed7516847f4a77b8fc01f2f9e6f'
     );
 
-   //console.log(response);
+
     return { dados: response.data}
 
 }
-
-/* var news = Index.map(function(obj) {
-    return Object.keys(obj).map(function(key) {
-        return obj[key];
-    });
-});
-  console.log(news) */
 
 
 
