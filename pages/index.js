@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import { Button, Layout } from 'reactstrap';
+import { UncontrolledCarousel, Container, Row, Col, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, NavLink, Nav, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText } from 'reactstrap';
 
 import axios from 'axios';
 
@@ -9,50 +9,236 @@ const Index = ({dados}) => (
     <div key={dados.articles[1].id}>
 
 
-<Button color="danger">Danger!</Button>
+{/* Início da NavBar */}
+<div>
+  <Navbar
+    color="light"
+    expand="md"
+    light
+  >
+    <NavbarBrand href="/">
+      reactstrap
+    </NavbarBrand>
+    <NavbarToggler onClick={function noRefCheck(){}} />
+    <Collapse navbar>
+      <Nav
+        className="me-auto"
+        navbar
+      >
+        <NavItem>
+          <NavLink href="/components/">
+            Components
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="https://github.com/reactstrap/reactstrap">
+            GitHub
+          </NavLink>
+        </NavItem>
+        <UncontrolledDropdown
+          inNavbar
+          nav
+        >
+          <DropdownToggle
+            caret
+            nav
+          >
+            Options
+          </DropdownToggle>
+          <DropdownMenu right>
+            <DropdownItem>
+              Option 1
+            </DropdownItem>
+            <DropdownItem>
+              Option 2
+            </DropdownItem>
+            <DropdownItem divider />
+            <DropdownItem>
+              Reset
+            </DropdownItem>
+          </DropdownMenu>
+        </UncontrolledDropdown>
+      </Nav>
+      <NavbarText>
+        Simple Text
+      </NavbarText>
+    </Collapse>
+  </Navbar>
+</div>
+  {/* Fim da Navbar */}
 
-       {/* <!-- As a link --> */}
-<nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-  </div>
-</nav>
+<div >
+  <Container>
+  <UncontrolledCarousel
+  items={[
+    {
+      altText: dados.articles[0].title,
+      caption: dados.articles[0].title,
+      key: 1,
+      src: dados.articles[0].urlToImage
+    },
+    {
+      altText: dados.articles[1].title,
+      caption: dados.articles[1].title,
+      key: 2,
+      src: dados.articles[1].urlToImage
+    },
+    {
+      altText: dados.articles[2].title,
+      caption: dados.articles[2].title,
+      key: 3,
+      src: dados.articles[2].urlToImage
+    }
+  ]}
+ />
+  </Container>
+</div>
 
-{/* <!-- As a heading --> */}
-<nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <span class="navbar-brand mb-0 h1">Últimas Noticias</span>
-  </div>
-</nav>
-        {console.log(dados)}
+
+
+
+{/* Início Colunas */}
 
 <div>
-  <div class="row">
+<Container>
+  <Row>
+    <Col className="bg-light border">
+      .col
+    </Col>
+  </Row>
+  <Row>
+    <Col className="bg-light border">
     <div class="col">
     {dados.articles[0].title}
-    <img src={dados.articles[0].urlToImage} class="rounded mx-auto d-block" width={500} alt="..."></img>
+    <img src={dados.articles[0].urlToImage} class="rounded mx-auto d-block" width={250} alt="..."></img>
 
     </div>
-    <div class="col">
+    </Col>
+    <Col className="bg-light border" >
+    <div class="col" >
     {dados.articles[1].title}
-    <img src={dados.articles[1].urlToImage} class="rounded mx-auto d-block" width={500} alt="..."></img>
+    <img src={dados.articles[1].urlToImage} class="rounded mx-auto d-block" width={250} alt="..."></img>
+
     </div>
-  </div>
-  <div class="row">
+    </Col>
+    <Col className="bg-light border">
     <div class="col">
     {dados.articles[2].title}
-    <img src={dados.articles[2].urlToImage} class="rounded mx-auto d-block" width={500} alt="..."></img>
+    <img src={dados.articles[2].urlToImage} class="rounded mx-auto d-block" width={250} alt="..."></img>
+
     </div>
+    </Col>
+    <Col className="bg-light border">
     <div class="col">
     {dados.articles[3].title}
-    <img src={dados.articles[3].urlToImage} class="rounded mx-auto d-block" width={500} alt="..."></img>
+    <img src={dados.articles[3].urlToImage} class="rounded mx-auto d-block" width={250} alt="..."></img>
+
     </div>
-    <div class="col">
-    {dados.articles[4].title}
-    <img src={dados.articles[4].urlToImage} class="rounded mx-auto d-block" width={500} alt="..."></img>
-    </div>
-  </div>
+    </Col>
+  </Row>
+  <Row>
+    <Col
+      className="bg-light border"
+      xs="3"
+    >
+      .col-3
+    </Col>
+    <Col
+      className="bg-light border"
+      xs="auto"
+    >
+      .col-auto - variable width content
+    </Col>
+    <Col
+      className="bg-light border"
+      xs="3"
+    >
+      .col-3
+    </Col>
+  </Row>
+  <Row>
+    <Col
+      className="bg-light border"
+      xs="6"
+    >
+      .col-6
+    </Col>
+    <Col
+      className="bg-light border"
+      xs="6"
+    >
+      .col-6
+    </Col>
+  </Row>
+  <Row>
+    <Col
+      className="bg-light border"
+      sm="4"
+      xs="6"
+    >
+      .col-6 .col-sm-4
+    </Col>
+    <Col
+      className="bg-light border"
+      sm="4"
+      xs="6"
+    >
+      .col-6 .col-sm-4
+    </Col>
+    <Col
+      className="bg-light border"
+      sm="4"
+    >
+      .col-sm-4
+    </Col>
+  </Row>
+  <Row>
+    <Col
+      className="bg-light border"
+      sm={{
+        offset: 1,
+        order: 2,
+        size: 6
+      }}
+    >
+      .col-sm-6 .order-sm-2 .offset-sm-1
+    </Col>
+  </Row>
+  <Row>
+    <Col
+      className="bg-light border"
+      md={{
+        offset: 3,
+        size: 6
+      }}
+      sm="12"
+    >
+      .col-sm-12 .col-md-6 .offset-md-3
+    </Col>
+  </Row>
+  <Row>
+    <Col
+      className="bg-light border"
+      sm={{
+        offset: 1,
+        size: 'auto'
+      }}
+    >
+      .col-sm-auto .offset-sm-1
+    </Col>
+    <Col
+      className="bg-light border"
+      sm={{
+        offset: 1,
+        size: 'auto'
+      }}
+    >
+      .col-sm-auto .offset-sm-1
+    </Col>
+  </Row>
+</Container>
 </div>
+
  
     </div>
 
