@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { Container, Row, Col} from 'reactstrap';
-import Barra from './navbar';
 
 
 import axios from 'axios';
@@ -11,7 +10,6 @@ import axios from 'axios';
 const Api = ({dados}) => (
 <div>
 
-<Barra></Barra>
 <Container>
 
 <Row>
