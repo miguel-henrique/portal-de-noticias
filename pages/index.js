@@ -11,8 +11,8 @@ export default function Index() {
 
     <div>
       <Barra></Barra>
-      <Blog></Blog>
       <Noticias></Noticias>
+     
       
     </div>
   )

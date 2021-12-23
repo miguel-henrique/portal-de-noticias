@@ -164,3 +164,5 @@ Api.getInitialProps = async () =>{
     return { dados: response.data}
 
 }
+
+export default Api
