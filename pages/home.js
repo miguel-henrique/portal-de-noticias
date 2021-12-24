@@ -1,7 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import { Container, Row, Col} from 'reactstrap';
+import { Container, Row, Col, UncontrolledCarousel } from 'reactstrap';
 import Barra from "./components/navbar";
+
 
 import axios from 'axios';
 
@@ -11,7 +12,32 @@ const Api = ({dados}) => (
 <div>
 
 <Barra></Barra>
+
 <Container>
+
+    
+    <UncontrolledCarousel
+    items={[
+      {
+        altText: dados.articles[0].title,
+        //caption: dados.articles[0].title,
+        key: 1,
+        src: dados.articles[0].urlToImage
+      },
+      {
+        altText: dados.articles[1].title,
+        //caption: dados.articles[1].title,
+        key: 2,
+        src: dados.articles[1].urlToImage
+      },
+      {
+        altText: dados.articles[2].title,
+        //caption: dados.articles[2].title,
+        key: 3,
+        src: dados.articles[2].urlToImage
+      }
+    ]}
+   />
 
 <Row>
     <Col
@@ -48,41 +74,6 @@ const Api = ({dados}) => (
     </Col>
   </Row>  
 
-  <Row>
-    <Col className="bg-light border">
-      .col
-    </Col>
-  </Row>
-  <Row>
-    <Col className="bg-light border">
-    <div class="col">
-    {dados.articles[0].title}
-    <img src={dados.articles[0].urlToImage} class="rounded mx-auto d-block" width={250} alt="..."></img>
-
-    </div>
-    </Col>
-    <Col className="bg-light border" >
-    <div class="col" >
-    {dados.articles[1].title}
-    <img src={dados.articles[1].urlToImage} class="rounded mx-auto d-block" width={250} alt="..."></img>
-
-    </div>
-    </Col>
-    <Col className="bg-light border">
-    <div class="col">
-    {dados.articles[2].title}
-    <img src={dados.articles[2].urlToImage} class="rounded mx-auto d-block" width={250} alt="..."></img>
-
-    </div>
-    </Col>
-    <Col className="bg-light border">
-    <div class="col">
-    {dados.articles[3].title}
-    <img src={dados.articles[3].urlToImage} class="rounded mx-auto d-block" width={250} alt="..."></img>
-
-    </div>
-    </Col>
-  </Row>
   <Row>
     <Col
       className="bg-light border"
