@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import { Container, Row, Col, UncontrolledCarousel } from 'reactstrap';
+import { Button, CardText, CardSubtitle, CardGroup, Card, CardImg, CardBody, CardTitle, Container, Row, Col, UncontrolledCarousel } from 'reactstrap';
 import Barra from "./components/navbar";
 
 
@@ -50,13 +50,7 @@ const Api = ({dados}) => (
     <img src={dados.articles[0].urlToImage} class="rounded mx-auto d-block" width={250} alt="..."></img>
 
     </div>
-    </Col>
-    <Col
-      className="bg-light border"
-      sm="4"
-      xs="6"
-    >
-      <div class="col" >
+    <div class="col">
     {dados.articles[1].title}
     <img src={dados.articles[1].urlToImage} class="rounded mx-auto d-block" width={250} alt="..."></img>
 
@@ -65,81 +59,159 @@ const Api = ({dados}) => (
     <Col
       className="bg-light border"
       sm="4"
+      xs="6"
     >
-      <div class="col">
+      <div class="col" >
     {dados.articles[2].title}
     <img src={dados.articles[2].urlToImage} class="rounded mx-auto d-block" width={250} alt="..."></img>
+
+    </div>
+    <div class="col" >
+    {dados.articles[3].title}
+    <img src={dados.articles[3].urlToImage} class="rounded mx-auto d-block" width={250} alt="..."></img>
+
+    </div>
+    </Col>
+    <Col
+      className="bg-light border"
+      sm="4"
+    >
+      <div class="col">
+    {dados.articles[4].title}
+    <img src={dados.articles[4].urlToImage} class="rounded mx-auto d-block" width={250} alt="..."></img>
+
+    </div>
+    <div class="col">
+    {dados.articles[5].title}
+    <img src={dados.articles[5].urlToImage} class="rounded mx-auto d-block" width={250} alt="..."></img>
 
     </div>
     </Col>
   </Row>  
 
-  <Row>
-    <Col
-      className="bg-light border"
-      xs="3"
-    >
-      .col-3
-    </Col>
-    <Col
-      className="bg-light border"
-      xs="auto"
-    >
-      .col-auto - variable width content
-    </Col>
-    <Col
-      className="bg-light border"
-      xs="3"
-    >
-      .col-3
-    </Col>
-  </Row>
+  <div>
+
+
+  </div>
+
+
+  {/* Inicios Cards */}
+
+
+  <CardGroup>
+  <Card>
+    <CardImg
+      alt="Card image cap"
+      src={dados.articles[5].urlToImage}
+      top
+      width="100px"
+      height="200px"
+    />
+    <CardBody>
+      <CardTitle tag="h5">
+        Card title
+      </CardTitle>
+      <CardSubtitle
+        className="mb-2 text-muted"
+        tag="h6"
+      >
+        Card subtitle
+      </CardSubtitle>
+      <CardText>
+        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+      </CardText>
+      
+    </CardBody>
+  </Card>
+  <Card>
+    <CardImg
+      alt="Card image cap"
+      src={dados.articles[4].urlToImage}
+      top
+      width="100px"
+      height="200px"
+    />
+    <CardBody>
+      <CardTitle tag="h5">
+        Card title
+      </CardTitle>
+      <CardSubtitle
+        className="mb-2 text-muted"
+        tag="h6"
+      >
+        Card subtitle
+      </CardSubtitle>
+      <CardText>
+        This card has supporting text below as a natural lead-in to additional content.
+      </CardText>
+      
+    </CardBody>
+  </Card>
+  <Card>
+    <CardImg
+      alt="Card image cap"
+      src={dados.articles[6].urlToImage}
+      top
+      width="100px"
+      height="200px"
+    />
+    <CardBody>
+      <CardTitle tag="h5">
+        Card title
+      </CardTitle>
+      <CardSubtitle
+        className="mb-2 text-muted"
+        tag="h6"
+      >
+        Card subtitle
+      </CardSubtitle>
+      <CardText>
+        This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+      </CardText>
+      
+    </CardBody>
+  </Card>
+</CardGroup>
+
+
+
+  {/* Fim Cards */}
+
+
+{/* Inicio Sizing */}
+
+<Row>
+  <Col sm="6">
+    <Card body>
+      <CardTitle tag="h5">
+        Special Title Treatment
+      </CardTitle>
+      <CardText>
+        With supporting text below as a natural lead-in to additional content.
+      </CardText>
+      <Button>
+        Go somewhere
+      </Button>
+    </Card>
+  </Col>
+  <Col sm="6">
+    <Card body>
+      <CardTitle tag="h5">
+        Special Title Treatment
+      </CardTitle>
+      <CardText>
+        With supporting text below as a natural lead-in to additional content.
+      </CardText>
+      <Button>
+        Go somewhere
+      </Button>
+    </Card>
+  </Col>
+</Row>
+
+
+{/* Fim sizing */}
   
-  
-  <Row>
-    <Col
-      className="bg-light border"
-      sm={{
-        offset: 1,
-        order: 2,
-        size: 6
-      }}
-    >
-      .col-sm-6 .order-sm-2 .offset-sm-1
-    </Col>
-  </Row>
-  <Row>
-    <Col
-      className="bg-light border"
-      md={{
-        offset: 3,
-        size: 6
-      }}
-      sm="12"
-    >
-      .col-sm-12 .col-md-6 .offset-md-3
-    </Col>
-  </Row>
-  <Row>
-    <Col
-      className="bg-light border"
-      sm={{
-        offset: 1,
-        size: 'auto'
-      }}
-    >
-      .col-sm-auto .offset-sm-1
-    </Col>
-    <Col
-      className="bg-light border"
-      sm={{
-        offset: 1,
-        size: 'auto'
-      }}
-    >
-      .col-sm-auto .offset-sm-1
-    </Col>
-  </Row>
 </Container>
 </div>
 
