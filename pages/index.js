@@ -12,10 +12,11 @@ const Api = ({dados}) => (
 <div>
 
 <Barra></Barra>
-
+{console.log(dados)}
 <Container>
-
     
+
+{/* Inicio Carousel */}
     <UncontrolledCarousel
     items={[
       {
@@ -38,61 +39,8 @@ const Api = ({dados}) => (
       }
     ]}
    />
+   {/* Fim Carousel */}
 
-<Row>
-    <Col
-      className="bg-light border"
-      sm="4"
-      xs="6"
-    >
-      <div class="col">
-    {dados.articles[0].title}
-    <img src={dados.articles[0].urlToImage} class="rounded mx-auto d-block" width={250} alt="..."></img>
-
-    </div>
-    <div class="col">
-    {dados.articles[1].title}
-    <img src={dados.articles[1].urlToImage} class="rounded mx-auto d-block" width={250} alt="..."></img>
-
-    </div>
-    </Col>
-    <Col
-      className="bg-light border"
-      sm="4"
-      xs="6"
-    >
-      <div class="col" >
-    {dados.articles[2].title}
-    <img src={dados.articles[2].urlToImage} class="rounded mx-auto d-block" width={250} alt="..."></img>
-
-    </div>
-    <div class="col" >
-    {dados.articles[3].title}
-    <img src={dados.articles[3].urlToImage} class="rounded mx-auto d-block" width={250} alt="..."></img>
-
-    </div>
-    </Col>
-    <Col
-      className="bg-light border"
-      sm="4"
-    >
-      <div class="col">
-    {dados.articles[4].title}
-    <img src={dados.articles[4].urlToImage} class="rounded mx-auto d-block" width={250} alt="..."></img>
-
-    </div>
-    <div class="col">
-    {dados.articles[5].title}
-    <img src={dados.articles[5].urlToImage} class="rounded mx-auto d-block" width={250} alt="..."></img>
-
-    </div>
-    </Col>
-  </Row>  
-
-  <div>
-
-
-  </div>
 
 
   {/* Inicios Cards */}
@@ -102,23 +50,86 @@ const Api = ({dados}) => (
   <Card>
     <CardImg
       alt="Card image cap"
-      src={dados.articles[5].urlToImage}
+      src={dados.articles[0].urlToImage}
       top
       width="100px"
       height="200px"
     />
     <CardBody>
       <CardTitle tag="h5">
-        Card title
+      {dados.articles[0].title}
       </CardTitle>
-      <CardSubtitle
-        className="mb-2 text-muted"
-        tag="h6"
-      >
-        Card subtitle
-      </CardSubtitle>
+      
       <CardText>
-        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+      {dados.articles[0].description}
+      </CardText>
+      
+    </CardBody>
+  </Card>
+  <Card>
+    <CardImg
+      alt="Card image cap"
+      src={dados.articles[1].urlToImage}
+      top
+      width="100px"
+      height="200px"
+    />
+    <CardBody>
+      <CardTitle tag="h5">
+      {dados.articles[1].title}
+      </CardTitle>
+      
+      <CardText>
+      {dados.articles[1].description}
+      </CardText>
+      
+    </CardBody>
+  </Card>
+  <Card>
+    <CardImg
+      alt="Card image cap"
+      src={dados.articles[2].urlToImage}
+      top
+      width="100px"
+      height="200px"
+    />
+    <CardBody>
+      <CardTitle tag="h5">
+      {dados.articles[2].title}
+      </CardTitle>
+      
+      <CardText>
+      {dados.articles[2].description}
+      </CardText>
+      
+    </CardBody>
+  </Card>
+</CardGroup>
+
+
+
+  {/* Fim Cards */}
+
+
+  {/* Inicios Cards */}
+
+
+  <CardGroup>
+  <Card>
+    <CardImg
+      alt="Card image cap"
+      src={dados.articles[3].urlToImage}
+      top
+      width="100px"
+      height="200px"
+    />
+    <CardBody>
+      <CardTitle tag="h5">
+      {dados.articles[3].title}
+      </CardTitle>
+      
+      <CardText>
+      {dados.articles[3].description}
       </CardText>
       
     </CardBody>
@@ -133,16 +144,11 @@ const Api = ({dados}) => (
     />
     <CardBody>
       <CardTitle tag="h5">
-        Card title
+      {dados.articles[4].title}
       </CardTitle>
-      <CardSubtitle
-        className="mb-2 text-muted"
-        tag="h6"
-      >
-        Card subtitle
-      </CardSubtitle>
+      
       <CardText>
-        This card has supporting text below as a natural lead-in to additional content.
+      {dados.articles[4].description}
       </CardText>
       
     </CardBody>
@@ -150,23 +156,18 @@ const Api = ({dados}) => (
   <Card>
     <CardImg
       alt="Card image cap"
-      src={dados.articles[6].urlToImage}
+      src={dados.articles[5].urlToImage}
       top
       width="100px"
       height="200px"
     />
     <CardBody>
       <CardTitle tag="h5">
-        Card title
+      {dados.articles[5].title}
       </CardTitle>
-      <CardSubtitle
-        className="mb-2 text-muted"
-        tag="h6"
-      >
-        Card subtitle
-      </CardSubtitle>
+      
       <CardText>
-        This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+      {dados.articles[5].description}
       </CardText>
       
     </CardBody>
@@ -176,6 +177,7 @@ const Api = ({dados}) => (
 
 
   {/* Fim Cards */}
+
 
 
 {/* Inicio Sizing */}
@@ -211,6 +213,9 @@ const Api = ({dados}) => (
 
 
 {/* Fim sizing */}
+
+
+
   
 </Container>
 </div>
