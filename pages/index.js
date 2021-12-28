@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { Button, CardText, CardSubtitle, CardGroup, Card, CardImg, CardBody, CardTitle, Container, Row, Col, UncontrolledCarousel } from 'reactstrap';
 import Barra from "./components/navbar";
+import Link from "next/link";
 
 
 import axios from 'axios';
@@ -42,12 +43,12 @@ const Api = ({dados}) => (
    {/* Fim Carousel */}
 
 
-
   {/* Inicios Cards */}
 
 
   <CardGroup>
   <Card>
+  
     <CardImg
       alt="Card image cap"
       src={dados.articles[0].urlToImage}
@@ -56,16 +57,19 @@ const Api = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    
+    <Link href={dados.articles[0].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[0].title}
       </CardTitle>
+    </Link> 
       
       <CardText>
       {dados.articles[0].description}
       </CardText>
-      
     </CardBody>
   </Card>
+  
   <Card>
     <CardImg
       alt="Card image cap"
@@ -115,7 +119,9 @@ const Api = ({dados}) => (
 
 
   <CardGroup>
+ 
   <Card>
+  
     <CardImg
       alt="Card image cap"
       src={dados.articles[3].urlToImage}
@@ -133,7 +139,9 @@ const Api = ({dados}) => (
       </CardText>
       
     </CardBody>
+    
   </Card>
+  
   <Card>
     <CardImg
       alt="Card image cap"
