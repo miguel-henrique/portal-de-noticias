@@ -11,7 +11,7 @@ export default function Barra() {
     light
   >
     <NavbarBrand href="/">
-      reactstrap
+      Portal
     </NavbarBrand>
     <NavbarToggler onClick={function noRefCheck(){}} />
     <Collapse navbar>
@@ -21,14 +21,25 @@ export default function Barra() {
       >
         <NavItem>
           <NavLink href="/components/">
-            Components
+            Politica
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink href="https://github.com/reactstrap/reactstrap">
-            GitHub
+            Economia
           </NavLink>
         </NavItem>
+        <NavItem>
+          <NavLink href="https://github.com/reactstrap/reactstrap">
+            Esporte
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="https://github.com/reactstrap/reactstrap">
+            Tecnologia
+          </NavLink>
+        </NavItem>
+        
         <UncontrolledDropdown
           inNavbar
           nav
