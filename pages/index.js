@@ -14,6 +14,28 @@ import axios from 'axios';
       <Head>
         <title>Portal de Noticias</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        
+        <base href=""/>
+        <meta name="description" content="Portal de noticias consumindo api do Google"/>
+        <meta name="keywords" content="Portal de noticias"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="geo.position" content="-23.6873165,-46.7046827"/>
+        <meta name="geo.placename" content="São Paulo-SP"/>
+        <meta name="geo.region" content="SP-BR"/>
+        <meta name="ICBM" content="-23.6873165,-46.7046827"/>
+        <meta name="robots" content="index,follow"/>
+        <meta name="rating" content="General"/>
+        <meta name="revisit-after" content="7 days"/>
+        <link rel="canonical" href=""/>
+        <meta name="author" content="Portal de noticias"/>	
+        <link rel="shortcut icon" href="https://www.filmestretchbrasil.com.br/images/favicon.ico" />
+        
+        <meta property="og:region" content="Brasil"/>
+        <meta property="og:title" content="Portal de noticias"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:url" content=""/>
+        <meta property="og:description" content="Portal de noticias consumindo API do Google"/>
+        <meta property="og:site_name" content="Portal de Noticias"/>
       </Head>
     
 
