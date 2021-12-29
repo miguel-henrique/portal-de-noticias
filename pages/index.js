@@ -3,9 +3,22 @@ import React from 'react';
 import { Button, CardText, CardSubtitle, CardGroup, Card, CardImg, CardBody, CardTitle, Container, Row, Col, UncontrolledCarousel } from 'reactstrap';
 import Barra from "./components/navbar";
 import Link from "next/link";
+import Head from 'next/head'
 
 
 import axios from 'axios';
+
+
+/* Inicio head */
+    
+      <Head>
+        <title>Portal de Noticias</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+    
+
+/* Fim head */
+
 
 
 
