@@ -37,7 +37,7 @@ const Api = ({dados}) => (
         <meta name="revisit-after" content="7 days"/>
         <link rel="canonical" href=""/>
         <meta name="author" content="Portal de noticias"/>	
-        <link rel="shortcut icon" href="https://www.filmestretchbrasil.com.br/images/favicon.ico" />
+        <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/000000/logout-rounded.png" />
         
         <meta property="og:region" content="Brasil"/>
         <meta property="og:title" content="Portal de noticias"/>

@@ -11,7 +11,8 @@ export default function Barra() {
     light
   >
     <NavbarBrand href="/">
-      Portal
+    <img width="30px" src="https://img.icons8.com/fluency/48/000000/logout-rounded.png"/>
+      Portal de Noticias
     </NavbarBrand>
     <NavbarToggler onClick={function noRefCheck(){}} />
     <Collapse navbar>
