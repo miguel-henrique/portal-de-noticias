@@ -9,12 +9,21 @@ import Head from 'next/head'
 import axios from 'axios';
 
 
-/* Inicio head */
+
+
+
+const Api = ({dados}) => (
+<div>
+
+
+
+
+    {/* Inicio head */}
     
       <Head>
         <title>Portal de Noticias</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        
+       
         <base href=""/>
         <meta name="description" content="Portal de noticias consumindo api do Google"/>
         <meta name="keywords" content="Portal de noticias"/>
@@ -39,13 +48,9 @@ import axios from 'axios';
       </Head>
     
 
-/* Fim head */
+  {/* Fim head */} 
 
 
-
-
-const Api = ({dados}) => (
-<div>
 
 <Barra></Barra>
 {console.log(dados)}
