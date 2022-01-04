@@ -263,6 +263,150 @@ const Api = ({dados}) => (
 {/* Fim sizing */}
 
 
+{/* Inicios Cards */}
+
+
+<CardGroup>
+  <Card>
+  
+    <CardImg
+      alt="Card image cap"
+      src={dados.articles[6].urlToImage}
+      top
+      width="100px"
+      height="200px"
+    />
+    <CardBody>
+    
+    <Link href={dados.articles[6].url} target='_blank'>
+      <CardTitle tag="h5">
+      {dados.articles[6].title}
+      </CardTitle>
+    </Link> 
+      
+      <CardText>
+      {dados.articles[6].description}
+      </CardText>
+    </CardBody>
+  </Card>
+  
+  <Card>
+    <CardImg
+      alt="Card image cap"
+      src={dados.articles[7].urlToImage}
+      top
+      width="100px"
+      height="200px"
+    />
+    <CardBody>
+      <CardTitle tag="h5">
+      {dados.articles[7].title}
+      </CardTitle>
+      
+      <CardText>
+      {dados.articles[7].description}
+      </CardText>
+      
+    </CardBody>
+  </Card>
+  <Card>
+    <CardImg
+      alt="Card image cap"
+      src={dados.articles[8].urlToImage}
+      top
+      width="100px"
+      height="200px"
+    />
+    <CardBody>
+      <CardTitle tag="h5">
+      {dados.articles[8].title}
+      </CardTitle>
+      
+      <CardText>
+      {dados.articles[8].description}
+      </CardText>
+      
+    </CardBody>
+  </Card>
+</CardGroup>
+
+
+
+  {/* Fim Cards */}
+
+  
+{/* Inicios Cards */}
+
+
+<CardGroup>
+  <Card>
+  
+    <CardImg
+      alt="Card image cap"
+      src={dados.articles[9].urlToImage}
+      top
+      width="100px"
+      height="200px"
+    />
+    <CardBody>
+    
+    <Link href={dados.articles[9].url} target='_blank'>
+      <CardTitle tag="h5">
+      {dados.articles[9].title}
+      </CardTitle>
+    </Link> 
+      
+      <CardText>
+      {dados.articles[9].description}
+      </CardText>
+    </CardBody>
+  </Card>
+  
+  <Card>
+    <CardImg
+      alt="Card image cap"
+      src={dados.articles[10].urlToImage}
+      top
+      width="100px"
+      height="200px"
+    />
+    <CardBody>
+      <CardTitle tag="h5">
+      {dados.articles[10].title}
+      </CardTitle>
+      
+      <CardText>
+      {dados.articles[10].description}
+      </CardText>
+      
+    </CardBody>
+  </Card>
+  <Card>
+    <CardImg
+      alt="Card image cap"
+      src={dados.articles[11].urlToImage}
+      top
+      width="100px"
+      height="200px"
+    />
+    <CardBody>
+      <CardTitle tag="h5">
+      {dados.articles[11].title}
+      </CardTitle>
+      
+      <CardText>
+      {dados.articles[11].description}
+      </CardText>
+      
+    </CardBody>
+  </Card>
+</CardGroup>
+
+
+
+  {/* Fim Cards */}
+
+
 
   
 </Container>

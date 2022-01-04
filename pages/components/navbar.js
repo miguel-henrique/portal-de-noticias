@@ -89,9 +89,13 @@ export default function Barra() {
         </UncontrolledDropdown>
       </Nav>
       
+      {/* <img width="30px" src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"/>  */}
+
+      
       <NavbarText>
-      <div>
-      <i class="fa fa-search" aria-hidden="true"></i>
+       
+      <div > 
+  
   <Input
    id="Pesquisas"
    name="Pesquisas"
