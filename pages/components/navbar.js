@@ -44,8 +44,8 @@ export default function Barra() {
         navbar
       >
         <NavItem>
-          <NavLink href="/components/">
-            Politica
+          <NavLink href="/negocios/">
+            Negócios
           </NavLink>
         </NavItem>
         <NavItem>
