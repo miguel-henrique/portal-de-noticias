@@ -49,18 +49,33 @@ export default function Barra() {
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="https://github.com/reactstrap/reactstrap">
-            Economia
+          <NavLink href="/entretenimento/">
+          Entretenimento
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="https://github.com/reactstrap/reactstrap">
-            Esporte
+          <NavLink href="/geral/">
+          Geral
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="https://github.com/reactstrap/reactstrap">
-            Tecnologia
+          <NavLink href="/saude/">
+          Saúde
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="/ciencia/">
+          Ciência
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="/esportes/">
+          Esportes
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="/tecnologia/">
+          Tecnologia
           </NavLink>
         </NavItem>
         
@@ -75,8 +90,8 @@ export default function Barra() {
             Options
           </DropdownToggle>
           <DropdownMenu right>
-            <DropdownItem>
-              Option 1
+            <DropdownItem href="/tecnologia/">
+              Tecnologia
             </DropdownItem>
             <DropdownItem>
               Option 2
