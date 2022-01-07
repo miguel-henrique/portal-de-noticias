@@ -1,6 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { Input, Offcanvas, Button, OffcanvasHeader, OffcanvasBody, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, NavLink, Nav, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText } from 'reactstrap';
+import Search from './search';
+
+
 
 export default function Barra() {
   return (
@@ -11,28 +14,6 @@ export default function Barra() {
     expand="md"
     light
   >
-
-{/* <div>
-  <Button
-    color="primary"
-    onClick={function noRefCheck(){}}
-  >
-    |||
-  </Button>
-  <Offcanvas toggle={function noRefCheck(){}}>
-    <OffcanvasHeader toggle={function noRefCheck(){}}>
-      Offcanvas
-    </OffcanvasHeader>
-    <OffcanvasBody>
-      <strong>
-        This is the Offcanvas body.
-      </strong>
-    </OffcanvasBody>
-  </Offcanvas>
-</div> */}
-
-
-
     <NavbarBrand href="/">
     <img width="30px" src="https://img.icons8.com/fluency/48/000000/logout-rounded.png"/>
       Portal de Noticias
@@ -107,18 +88,7 @@ export default function Barra() {
       {/* <img width="30px" src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"/>  */}
 
       
-      <NavbarText>
-       
-      <div > 
-  
-  <Input
-   id="Pesquisas"
-   name="Pesquisas"
-   placeholder="Pesquisar"
-   type="search"
-  />
-</div>
-      </NavbarText>
+      <Search></Search>
     </Collapse>
   </Navbar>
 
