@@ -88,7 +88,7 @@ export default function Barra() {
       {/* <img width="30px" src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"/>  */}
 
       
-      <Search></Search>
+      {/* <Search></Search> */}
     </Collapse>
   </Navbar>
 

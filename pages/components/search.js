@@ -3,6 +3,7 @@ import { useCallback, useRef, useState } from 'react'
 import Link from 'next/link'
 import { Input } from 'reactstrap'
 import axios from 'axios';
+import React from 'react';
 
 
 /* Search 1 começo */
@@ -110,16 +111,16 @@ onChangeHandler = async e => {
   this.setState({ value: e.target.value });
 };
 
-get renderMovies() {
+/* get renderMovies() {
   let movies = <h1>There's no movies</h1>;
   if (this.state.movies) {
     movies = <Movies list={this.state.movies} />;
   }
 
   return movies;
-}
+} */
 
-render() {
+/* render() {
   return (
     <div>
       <input
@@ -130,7 +131,7 @@ render() {
       {this.renderMovies}
     </div>
   );
-}
+} */
 }
 
 
