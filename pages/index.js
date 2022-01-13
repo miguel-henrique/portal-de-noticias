@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { Button, CardText, CardSubtitle, CardGroup, Card, CardImg, CardBody, CardTitle, Container, Row, Col, UncontrolledCarousel } from 'reactstrap';
 import Barra from "./components/navbar";
+import Publicidade from './components/publicidade';
 import Link from "next/link";
 import Head from 'next/head'
 
@@ -228,39 +229,11 @@ const Api = ({dados}) => (
 
 
 
-{/* Inicio Sizing */}
+{/* Inicio Publicidade */}
 
-<Row>
-  <Col sm="6">
-    <Card body>
-      <CardTitle tag="h5">
-        Special Title Treatment
-      </CardTitle>
-      <CardText>
-        With supporting text below as a natural lead-in to additional content.
-      </CardText>
-      <Button>
-        Go somewhere
-      </Button>
-    </Card>
-  </Col>
-  <Col sm="6">
-    <Card body>
-      <CardTitle tag="h5">
-        Special Title Treatment
-      </CardTitle>
-      <CardText>
-        With supporting text below as a natural lead-in to additional content.
-      </CardText>
-      <Button>
-        Go somewhere
-      </Button>
-    </Card>
-  </Col>
-</Row>
+<Publicidade></Publicidade>
 
-
-{/* Fim sizing */}
+{/* Fim Publicidade */}
 
 
 {/* Inicios Cards */}
