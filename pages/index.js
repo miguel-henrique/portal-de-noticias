@@ -97,7 +97,7 @@ const Api = ({dados}) => (
       width="100px"
       height="200px"
     />
-    <CardBody>
+    <CardBody >
     
     <Link href={dados.articles[0].url} target='_blank'>
       <CardTitle tag="h5">
