@@ -227,7 +227,7 @@ const Tecnologia = ({dados}) => (
 
   {/* Fim Cards */}
 
-
+ 
 {/* Inicio Publicidade */}
 
 <Publicidade></Publicidade>
