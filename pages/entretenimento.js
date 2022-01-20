@@ -22,7 +22,7 @@ const Entretenimento = ({dados}) => (
     {/* Inicio head */}
     
       <Head>
-        <title>Portal de Noticias - Negócios</title>
+        <title>Portal de Noticias - Entretenimento</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
        
         <base href=""/>
