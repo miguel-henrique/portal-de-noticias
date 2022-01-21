@@ -27,7 +27,7 @@ const Tecnologia = ({dados}) => (
        
         <base href=""/>
         <meta name="description" content="Portal de noticias consumindo api do Google"/>
-        <meta name="keywords" content="Portal de noticias"/>
+        <meta name="keywords" content="Portal de noticias, Noticias de tecnologia, Tecnologia"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="geo.position" content="-23.6873165,-46.7046827"/>
         <meta name="geo.placename" content="São Paulo-SP"/>
@@ -41,7 +41,7 @@ const Tecnologia = ({dados}) => (
         <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/000000/logout-rounded.png" />
         
         <meta property="og:region" content="Brasil"/>
-        <meta property="og:title" content="Portal de noticias"/>
+        <meta property="og:title" content="Portal de Noticias - Tecnologia"/>
         <meta property="og:type" content="article"/>
         <meta property="og:url" content=""/>
         <meta property="og:description" content="Portal de noticias consumindo API do Google"/>
