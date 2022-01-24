@@ -27,7 +27,7 @@ const Ciencia = ({dados}) => (
        
         <base href=""/>
         <meta name="description" content="Portal de noticias consumindo api do Google"/>
-        <meta name="keywords" content="Portal de noticias"/>
+        <meta name="keywords" content="Portal de noticias, Ciências, noticias de ciência, noticias"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="geo.position" content="-23.6873165,-46.7046827"/>
         <meta name="geo.placename" content="São Paulo-SP"/>
@@ -37,7 +37,7 @@ const Ciencia = ({dados}) => (
         <meta name="rating" content="General"/>
         <meta name="revisit-after" content="7 days"/>
         <link rel="canonical" href=""/>
-        <meta name="author" content="Portal de noticias"/>	
+        <meta name="author" content="Portal de Noticias - Ciências"/>	
         <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/000000/logout-rounded.png" />
         
         <meta property="og:region" content="Brasil"/>
