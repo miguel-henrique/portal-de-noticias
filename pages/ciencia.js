@@ -37,11 +37,11 @@ const Ciencia = ({dados}) => (
         <meta name="rating" content="General"/>
         <meta name="revisit-after" content="7 days"/>
         <link rel="canonical" href=""/>
-        <meta name="author" content="Portal de Noticias - Ciências"/>	
+        <meta name="author" content="Portal de Noticias"/>	
         <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/000000/logout-rounded.png" />
         
         <meta property="og:region" content="Brasil"/>
-        <meta property="og:title" content="Portal de noticias"/>
+        <meta property="og:title" content="Portal de Noticias - Ciências"/>
         <meta property="og:type" content="article"/>
         <meta property="og:url" content=""/>
         <meta property="og:description" content="Portal de noticias consumindo API do Google"/>
