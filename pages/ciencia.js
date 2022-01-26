@@ -99,7 +99,7 @@ const Ciencia = ({dados}) => (
     />
     <CardBody>
     
-    <Link href={dados.articles[0].url} target='_blank'>
+    <Link href='/noticias/ciencia/artigo1'>
       <CardTitle tag="h5">
       {dados.articles[0].title}
       </CardTitle>
