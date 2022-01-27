@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { Button, CardText, CardSubtitle, CardGroup, Card, CardImg, CardBody, CardTitle, Container, Row, Col, UncontrolledCarousel } from 'reactstrap';
-import Barra from "./components/navbar";
-import Publicidade from './components/publicidade';
+import Barra from "../components/navbar";
+import Publicidade from '../components/publicidade';
 import Link from "next/link";
 import Head from 'next/head'
 
@@ -99,7 +99,7 @@ const Api = ({dados}) => (
     />
     <CardBody >
     
-    <Link href="/{dados.articles[4].title}">
+    <Link href="/artigos/noticia/">
       <CardTitle tag="h5">
       {dados.articles[0].title}
       </CardTitle>
