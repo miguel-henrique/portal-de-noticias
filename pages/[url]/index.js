@@ -12,20 +12,14 @@ import axios from 'axios';
 
 const Post = ({dados}) => {
   const router = useRouter()
-  const { id } = router.query
+  const { url } = router.query
   
   return (
       
     <>
       <Barra />
       <h1>Post: {dados.articles[4].title}</h1>
-      <ul>
-        <li>
-          <Link href="/post/[id]/[comment]" as={`/post/${dados.articles[4].title}/first-comment`}>
-            <a>First comment</a>
-          </Link>
-        </li>
-      </ul>
+    
     </>
   )
 }

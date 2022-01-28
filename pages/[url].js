@@ -4,8 +4,8 @@ import Link from 'next/link'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { Button, CardText, CardSubtitle, CardGroup, Card, CardImg, CardBody, CardTitle, Container, Row, Col, UncontrolledCarousel } from 'reactstrap';
-import Barra from "../components/navbar";
-import Publicidade from '../components/publicidade';
+import Barra from "./components/navbar";
+import Publicidade from './components/publicidade';
 import Head from 'next/head'
 
 import axios from 'axios';
