@@ -18,7 +18,7 @@ const Post = ({dados}) => {
       
     <>
       <Barra />
-      <h1>{dados.articles[4].title}</h1>
+      <h1>{dados.articles[0].title}</h1>
     
     </>
   )

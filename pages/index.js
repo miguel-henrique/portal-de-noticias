@@ -99,7 +99,7 @@ const Api = ({dados}) => (
     />
     <CardBody >
     
-    <Link href="/[url]" as={`/{dados.articles[0].title}`}>
+    <Link href="/[index1].js" as={`/${dados.articles[0].title}`}>
       <CardTitle tag="h5">
       {dados.articles[0].title}
       </CardTitle>
@@ -120,9 +120,11 @@ const Api = ({dados}) => (
       height="200px"
     />
     <CardBody>
+      <Link href="/noticias/artigo1.js">
       <CardTitle tag="h5">
       {dados.articles[1].title}
       </CardTitle>
+      </Link>
       
       <CardText>
       {dados.articles[1].description}
