@@ -99,7 +99,7 @@ const Api = ({dados}) => (
     />
     <CardBody >
     
-    <Link href="/post/indice1.js" as={`/${dados.articles[0].title}`}>
+    <Link href="/principais/indice0" as={`/${dados.articles[0].title}`}>
       <CardTitle tag="h5">
       {dados.articles[0].title}
       </CardTitle>
