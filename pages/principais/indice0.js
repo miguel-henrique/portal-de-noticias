@@ -16,7 +16,16 @@ import axios from 'axios';
 const Api = ({dados}) => (
 <>
       <Barra />
+      {console.log}
       <h1>{dados.articles[0].title}</h1>
+      <CardImg
+      alt="Card image cap"
+      src={dados.articles[0].urlToImage}
+      top
+      width="100px"
+      height="400px"
+    />
+    <p>{dados.articles[0].content}</p>
      
     </>
 
