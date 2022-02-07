@@ -120,7 +120,7 @@ const Api = ({dados}) => (
       height="200px"
     />
     <CardBody>
-      <Link href="/post/{dados.articles[0].title}">
+      <Link href="/principais/indice1" as={`/${dados.articles[1].title}`}>
       <CardTitle tag="h5">
       {dados.articles[1].title}
       </CardTitle>
