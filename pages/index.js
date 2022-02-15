@@ -99,7 +99,7 @@ const Api = ({dados}) => (
     />
     <CardBody >
     
-    <Link href="/principais/indice0" as={`/${dados.articles[0].title}`}>
+    <Link href={dados.articles[0].url}>
       <CardTitle tag="h5">
       {dados.articles[0].title}
       </CardTitle>
@@ -120,7 +120,7 @@ const Api = ({dados}) => (
       height="200px"
     />
     <CardBody>
-      <Link href="/principais/indice1" as={`/${dados.articles[1].title}`}>
+      <Link href={dados.articles[1].url}>
       <CardTitle tag="h5">
       {dados.articles[1].title}
       </CardTitle>
@@ -141,10 +141,11 @@ const Api = ({dados}) => (
       height="200px"
     />
     <CardBody>
+      <Link href={dados.articles[2].url}>
       <CardTitle tag="h5">
       {dados.articles[2].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[2].description}
       </CardText>
@@ -173,6 +174,7 @@ const Api = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[3].url}/>
       <CardTitle tag="h5">
       {dados.articles[3].title}
       </CardTitle>
@@ -194,6 +196,7 @@ const Api = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[4].url}/>
       <CardTitle tag="h5">
       {dados.articles[4].title}
       </CardTitle>
@@ -213,6 +216,7 @@ const Api = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[5].url}/>
       <CardTitle tag="h5">
       {dados.articles[5].title}
       </CardTitle>
@@ -253,11 +257,11 @@ const Api = ({dados}) => (
     />
     <CardBody>
     
-    <Link href={dados.articles[6].url} target='_blank'>
+    <Link href={dados.articles[6].url}/>
       <CardTitle tag="h5">
       {dados.articles[6].title}
       </CardTitle>
-    </Link> 
+  
       
       <CardText>
       {dados.articles[6].description}
@@ -274,6 +278,7 @@ const Api = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[4].url}/>
       <CardTitle tag="h5">
       {dados.articles[7].title}
       </CardTitle>
@@ -293,6 +298,7 @@ const Api = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[4].url}/>
       <CardTitle tag="h5">
       {dados.articles[8].title}
       </CardTitle>
