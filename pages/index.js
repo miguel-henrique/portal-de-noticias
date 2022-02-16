@@ -356,7 +356,7 @@ const Api = ({dados}) => (
       height="200px"
     />
     <CardBody>
-    <Link href={dados.articles[9].url} target='_blank'>
+    <Link href={dados.articles[10].url}>
       <CardTitle tag="h5">
       {dados.articles[10].title}
       </CardTitle>
@@ -377,9 +377,11 @@ const Api = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[11].url}>
       <CardTitle tag="h5">
       {dados.articles[11].title}
       </CardTitle>
+      </Link>
       
       <CardText>
       {dados.articles[11].description}
