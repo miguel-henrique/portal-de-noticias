@@ -139,6 +139,7 @@ const Entretenimento = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[2].url} target='_blank'>      
       <CardTitle tag="h5">
       {dados.articles[2].title}
       </CardTitle>
@@ -146,6 +147,7 @@ const Entretenimento = ({dados}) => (
       <CardText>
       {dados.articles[2].description}
       </CardText>
+      </Link>
       
     </CardBody>
   </Card>
