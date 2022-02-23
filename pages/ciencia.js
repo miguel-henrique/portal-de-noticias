@@ -120,7 +120,7 @@ const Ciencia = ({dados}) => (
       height="200px"
     />
     <CardBody>
-    <Link href={dados.articles[1].url}>
+    <Link href={dados.articles[1].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[1].title}
       </CardTitle>
@@ -141,7 +141,7 @@ const Ciencia = ({dados}) => (
       height="200px"
     />
     <CardBody>
-    <Link href={dados.articles[2].url}>
+    <Link href={dados.articles[2].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[2].title}
       </CardTitle>
@@ -175,7 +175,7 @@ const Ciencia = ({dados}) => (
       height="200px"
     />
     <CardBody>
-    <Link href={dados.articles[3].url}>
+    <Link href={dados.articles[3].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[3].title}
       </CardTitle>
@@ -198,7 +198,7 @@ const Ciencia = ({dados}) => (
       height="200px"
     />
     <CardBody>
-    <Link href={dados.articles[4].url}>
+    <Link href={dados.articles[4].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[4].title}
       </CardTitle>
@@ -219,7 +219,7 @@ const Ciencia = ({dados}) => (
       height="200px"
     />
     <CardBody>
-    <Link href={dados.articles[5].url}>
+    <Link href={dados.articles[5].url} target='_blank'> 
       <CardTitle tag="h5">
       {dados.articles[5].title}
       </CardTitle>
@@ -281,7 +281,7 @@ const Ciencia = ({dados}) => (
       height="200px"
     />
     <CardBody>
-    <Link href={dados.articles[7].url}>
+    <Link href={dados.articles[7].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[7].title}
       </CardTitle>
@@ -302,6 +302,7 @@ const Ciencia = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[8].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[8].title}
       </CardTitle>
@@ -309,7 +310,7 @@ const Ciencia = ({dados}) => (
       <CardText>
       {dados.articles[8].description}
       </CardText>
-      
+      </Link>
     </CardBody>
   </Card>
 </CardGroup>
