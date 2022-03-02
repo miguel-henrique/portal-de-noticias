@@ -119,7 +119,7 @@ const Esportes = ({dados}) => (
       height="200px"
     />
     <CardBody>
-      <Link href={dados.articles[11].url} target='_blank'> 
+      <Link href={dados.articles[1].url} target='_blank'> 
       <CardTitle tag="h5">
       {dados.articles[1].title}
       </CardTitle>
@@ -139,6 +139,7 @@ const Esportes = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[2].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[2].title}
       </CardTitle>
@@ -146,7 +147,7 @@ const Esportes = ({dados}) => (
       <CardText>
       {dados.articles[2].description}
       </CardText>
-      
+      </Link>
     </CardBody>
   </Card>
 </CardGroup>
@@ -171,6 +172,7 @@ const Esportes = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[3].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[3].title}
       </CardTitle>
@@ -178,7 +180,7 @@ const Esportes = ({dados}) => (
       <CardText>
       {dados.articles[3].description}
       </CardText>
-      
+    </Link>
     </CardBody>
     
   </Card>
