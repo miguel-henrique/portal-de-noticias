@@ -120,10 +120,11 @@ const Geral = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[1].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[1].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[1].description}
       </CardText>
@@ -139,10 +140,11 @@ const Geral = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[2].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[2].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[2].description}
       </CardText>
@@ -171,10 +173,11 @@ const Geral = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[3].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[3].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[3].description}
       </CardText>
@@ -192,10 +195,11 @@ const Geral = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[4].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[4].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[4].description}
       </CardText>
@@ -211,10 +215,11 @@ const Geral = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[5].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[5].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[5].description}
       </CardText>
@@ -271,9 +276,11 @@ const Geral = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[7].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[7].title}
       </CardTitle>
+      </Link>
       
       <CardText>
       {dados.articles[7].description}
@@ -290,10 +297,11 @@ const Geral = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[8].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[8].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[8].description}
       </CardText>
@@ -343,10 +351,11 @@ const Geral = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[10].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[10].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[10].description}
       </CardText>
@@ -362,10 +371,11 @@ const Geral = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[11].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[11].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[11].description}
       </CardText>
