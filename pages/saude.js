@@ -120,10 +120,11 @@ const Saude = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[1].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[1].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[1].description}
       </CardText>
@@ -139,10 +140,11 @@ const Saude = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[2].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[2].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[2].description}
       </CardText>
