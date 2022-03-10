@@ -173,10 +173,11 @@ const Saude = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[3].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[3].title}
       </CardTitle>
-      
+      </Link>      
       <CardText>
       {dados.articles[3].description}
       </CardText>
@@ -194,10 +195,11 @@ const Saude = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[4].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[4].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[4].description}
       </CardText>
@@ -213,10 +215,11 @@ const Saude = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[5].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[5].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[5].description}
       </CardText>
