@@ -99,7 +99,7 @@ const Ciencia = ({dados}) => (
     />
     <CardBody>
     
-    <Link href={dados.articles[11].url}>
+    <Link href={dados.articles[0].url}>
       <CardTitle tag="h5">
       {dados.articles[0].title}
       </CardTitle>
@@ -124,11 +124,11 @@ const Ciencia = ({dados}) => (
       <CardTitle tag="h5">
       {dados.articles[1].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[1].description}
       </CardText>
-      </Link>
+  
       
     </CardBody>
   </Card>
@@ -145,11 +145,11 @@ const Ciencia = ({dados}) => (
       <CardTitle tag="h5">
       {dados.articles[2].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[2].description}
       </CardText>
-      </Link>
+      
       
     </CardBody>
   </Card>
@@ -179,11 +179,11 @@ const Ciencia = ({dados}) => (
       <CardTitle tag="h5">
       {dados.articles[3].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[3].description}
       </CardText>
-      </Link>
+      
       
     </CardBody>
     
@@ -202,11 +202,10 @@ const Ciencia = ({dados}) => (
       <CardTitle tag="h5">
       {dados.articles[4].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[4].description}
       </CardText>
-      </Link>
       
     </CardBody>
   </Card>
@@ -223,11 +222,11 @@ const Ciencia = ({dados}) => (
       <CardTitle tag="h5">
       {dados.articles[5].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[5].description}
       </CardText>
-      </Link>
+      
       
     </CardBody>
   </Card>
@@ -285,11 +284,11 @@ const Ciencia = ({dados}) => (
       <CardTitle tag="h5">
       {dados.articles[7].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[7].description}
       </CardText>
-      </Link>
+      
       
     </CardBody>
   </Card>
@@ -306,11 +305,11 @@ const Ciencia = ({dados}) => (
       <CardTitle tag="h5">
       {dados.articles[8].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[8].description}
       </CardText>
-      </Link>
+      
     </CardBody>
   </Card>
 </CardGroup>
@@ -356,10 +355,11 @@ const Ciencia = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[10].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[10].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[10].description}
       </CardText>
@@ -375,10 +375,11 @@ const Ciencia = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[11].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[11].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[11].description}
       </CardText>

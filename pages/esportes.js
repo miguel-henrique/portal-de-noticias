@@ -123,11 +123,11 @@ const Esportes = ({dados}) => (
       <CardTitle tag="h5">
       {dados.articles[1].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[1].description}
       </CardText>
-      </Link>
+      
     </CardBody>
   </Card>
   <Card>
@@ -143,11 +143,11 @@ const Esportes = ({dados}) => (
       <CardTitle tag="h5">
       {dados.articles[2].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[2].description}
       </CardText>
-      </Link>
+      
     </CardBody>
   </Card>
 </CardGroup>
@@ -176,11 +176,11 @@ const Esportes = ({dados}) => (
       <CardTitle tag="h5">
       {dados.articles[3].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[3].description}
       </CardText>
-    </Link>
+    
     </CardBody>
     
   </Card>
@@ -349,10 +349,11 @@ const Esportes = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[9].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[10].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[10].description}
       </CardText>
@@ -368,10 +369,11 @@ const Esportes = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[9].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[11].title}
       </CardTitle>
-      
+     </Link>
       <CardText>
       {dados.articles[11].description}
       </CardText>

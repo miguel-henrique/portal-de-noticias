@@ -59,30 +59,7 @@ export default function Barra() {
           Tecnologia
           </NavLink>
         </NavItem>
-        
-        <UncontrolledDropdown
-          inNavbar
-          nav
-        >
-          <DropdownToggle
-            caret
-            nav
-          >
-            Options
-          </DropdownToggle>
-          <DropdownMenu right>
-            <DropdownItem href="/tecnologia/">
-              Tecnologia
-            </DropdownItem>
-            <DropdownItem>
-              Option 2
-            </DropdownItem>
-            <DropdownItem divider />
-            <DropdownItem>
-              Reset
-            </DropdownItem>
-          </DropdownMenu>
-        </UncontrolledDropdown>
+      
       </Nav>
       
       {/* <img width="30px" src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"/>  */}

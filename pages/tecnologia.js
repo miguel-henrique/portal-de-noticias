@@ -296,10 +296,11 @@ const Tecnologia = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[1].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[8].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[8].description}
       </CardText>
@@ -349,10 +350,11 @@ const Tecnologia = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[1].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[10].title}
       </CardTitle>
-      
+      </Link>
       <CardText>
       {dados.articles[10].description}
       </CardText>
@@ -368,10 +370,11 @@ const Tecnologia = ({dados}) => (
       height="200px"
     />
     <CardBody>
+    <Link href={dados.articles[1].url} target='_blank'>
       <CardTitle tag="h5">
       {dados.articles[11].title}
       </CardTitle>
-      
+     </Link>
       <CardText>
       {dados.articles[11].description}
       </CardText>
