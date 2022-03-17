@@ -277,7 +277,10 @@ const Geral = ({dados}) => (
     />
     <CardBody>
     <Link href={dados.articles[7].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle 
+      tag="h5"
+      alt={dados.articles[7].title}
+      >
       {dados.articles[7].title}
       </CardTitle>
       </Link>
