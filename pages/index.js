@@ -100,13 +100,15 @@ const Api = ({dados}) => (
     <CardBody >
     
     <Link href={dados.articles[0].url} target='_blank'>
-      <CardTitle tag="h5"
+      <CardTitle 
+      tag="h5"
       alt={dados.articles[0].title}>
-      {dados.articles[0].title}
+        {dados.articles[0].title}
       </CardTitle>
     </Link> 
       
-      <CardText>
+      <CardText
+      alt={dados.articles[0].description}>
       {dados.articles[0].description}
       </CardText>
     </CardBody>
@@ -122,7 +124,9 @@ const Api = ({dados}) => (
     />
     <CardBody>
       <Link href={dados.articles[1].url}>
-      <CardTitle tag="h5">
+      <CardTitle 
+      tag="h5"
+      alt={dados.articles[1].title}>
       {dados.articles[1].title}
       </CardTitle>
       </Link>
@@ -143,7 +147,9 @@ const Api = ({dados}) => (
     />
     <CardBody>
       <Link href={dados.articles[2].url}>
-      <CardTitle tag="h5">
+      <CardTitle 
+      tag="h5"
+      alt={dados.articles[2].title}>
       {dados.articles[2].title}
       </CardTitle>
       </Link>
@@ -176,7 +182,9 @@ const Api = ({dados}) => (
     />
     <CardBody>
     <Link href={dados.articles[3].url}>
-      <CardTitle tag="h5">
+      <CardTitle 
+      tag="h5"
+      alt={dados.articles[3].title}>
       {dados.articles[3].title}
       </CardTitle>
       </Link>
