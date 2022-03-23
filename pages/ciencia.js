@@ -179,7 +179,8 @@ const Ciencia = ({dados}) => (
     />
     <CardBody>
     <Link href={dados.articles[3].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[3].title}>
       {dados.articles[3].title}
       </CardTitle>
       </Link>
@@ -202,7 +203,8 @@ const Ciencia = ({dados}) => (
     />
     <CardBody>
     <Link href={dados.articles[4].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[4].title}>
       {dados.articles[4].title}
       </CardTitle>
       </Link>
@@ -222,7 +224,8 @@ const Ciencia = ({dados}) => (
     />
     <CardBody>
     <Link href={dados.articles[5].url} target='_blank'> 
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[5].title}>
       {dados.articles[5].title}
       </CardTitle>
       </Link>
@@ -263,7 +266,8 @@ const Ciencia = ({dados}) => (
     <CardBody>
     
     <Link href={dados.articles[6].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[6].title}>
       {dados.articles[6].title}
       </CardTitle>
     </Link> 
@@ -284,7 +288,8 @@ const Ciencia = ({dados}) => (
     />
     <CardBody>
     <Link href={dados.articles[7].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[7].title}>
       {dados.articles[7].title}
       </CardTitle>
       </Link>
@@ -305,7 +310,8 @@ const Ciencia = ({dados}) => (
     />
     <CardBody>
     <Link href={dados.articles[8].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[8].title}>
       {dados.articles[8].title}
       </CardTitle>
       </Link>
@@ -338,7 +344,8 @@ const Ciencia = ({dados}) => (
     <CardBody>
     
     <Link href={dados.articles[9].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[9].title}>
       {dados.articles[9].title}
       </CardTitle>
     </Link> 
