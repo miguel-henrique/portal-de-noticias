@@ -100,7 +100,8 @@ const Negocios = ({dados}) => (
     <CardBody>
     
     <Link href={dados.articles[0].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[0].title}>
       {dados.articles[0].title}
       </CardTitle>
     </Link> 
@@ -121,7 +122,8 @@ const Negocios = ({dados}) => (
     />
     <CardBody>
     <Link href={dados.articles[1].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[1].title}>
       {dados.articles[1].title}
       </CardTitle>
       </Link>
@@ -141,7 +143,8 @@ const Negocios = ({dados}) => (
     />
     <CardBody>
     <Link href={dados.articles[2].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[2].title}>
       {dados.articles[2].title}
       </CardTitle>
       </Link>
@@ -174,7 +177,8 @@ const Negocios = ({dados}) => (
     />
     <CardBody>
     <Link href={dados.articles[3].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[3].title}>
       {dados.articles[3].title}
       </CardTitle>
       </Link>
@@ -196,7 +200,8 @@ const Negocios = ({dados}) => (
     />
     <CardBody>
     <Link href={dados.articles[4].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[4].title}>
       {dados.articles[4].title}
       </CardTitle>
       </Link>
@@ -216,7 +221,8 @@ const Negocios = ({dados}) => (
     />
     <CardBody>
     <Link href={dados.articles[5].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[5].title}>
       {dados.articles[5].title}
       </CardTitle>
       </Link>
@@ -256,7 +262,8 @@ const Negocios = ({dados}) => (
     <CardBody>
     
     <Link href={dados.articles[6].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[6].title}>
       {dados.articles[6].title}
       </CardTitle>
     </Link> 
@@ -277,7 +284,8 @@ const Negocios = ({dados}) => (
     />
     <CardBody>
     <Link href={dados.articles[7].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[7].title}>
       {dados.articles[7].title}
       </CardTitle>
     </Link>

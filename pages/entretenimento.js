@@ -287,7 +287,8 @@ const Entretenimento = ({dados}) => (
     />
     <CardBody>
     <Link href={dados.articles[7].url} target='_blank'> 
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[7].title}>
       {dados.articles[7].title}
       </CardTitle>
       </Link>
@@ -307,7 +308,8 @@ const Entretenimento = ({dados}) => (
     />
     <CardBody>
     <Link href={dados.articles[8].url} target='_blank'> 
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[8].title}>
       {dados.articles[8].title}
       </CardTitle>
       </Link>
