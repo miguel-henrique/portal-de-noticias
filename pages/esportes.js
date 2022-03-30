@@ -99,7 +99,8 @@ const Esportes = ({dados}) => (
     <CardBody>
     
     <Link href={dados.articles[0].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[0].title}>
       {dados.articles[0].title}
       </CardTitle>
     </Link> 
@@ -120,7 +121,8 @@ const Esportes = ({dados}) => (
     />
     <CardBody>
       <Link href={dados.articles[1].url} target='_blank'> 
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[1].title}>
       {dados.articles[1].title}
       </CardTitle>
       </Link>
@@ -140,7 +142,8 @@ const Esportes = ({dados}) => (
     />
     <CardBody>
     <Link href={dados.articles[2].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[2].title}>
       {dados.articles[2].title}
       </CardTitle>
       </Link>
@@ -173,7 +176,8 @@ const Esportes = ({dados}) => (
     />
     <CardBody>
     <Link href={dados.articles[3].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[3].title}>
       {dados.articles[3].title}
       </CardTitle>
       </Link>
