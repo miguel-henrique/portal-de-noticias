@@ -1,4 +1,4 @@
-
+/* 
 import { useCallback, useRef, useState } from 'react'
 import Link from 'next/link'
 import { Input } from 'reactstrap'
@@ -7,8 +7,8 @@ import React from 'react';
 
 
 /* Search 1 começo */
-
-/* export default function Search() {
+/* 
+export default function Search() {
 
   const searchRef = useRef(null)
   const [query, setQuery] = useState('')
@@ -85,15 +85,15 @@ import React from 'react';
       ) }
     </div>
   )
-} */
+} */ 
 
-/* Search 1 fim */
+/* Search 1 fim
 
 
-
+/* 
 /* Search 2 começo */
 
-
+/* 
 export default function Search() {
 
 search = async val => {
@@ -109,7 +109,7 @@ search = async val => {
 onChangeHandler = async e => {
   this.search(e.target.value);
   this.setState({ value: e.target.value });
-};
+}; */
 
 /* get renderMovies() {
   let movies = <h1>There's no movies</h1>;
@@ -132,7 +132,6 @@ onChangeHandler = async e => {
     </div>
   );
 } */
-}
 
 
 
