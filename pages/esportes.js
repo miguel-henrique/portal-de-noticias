@@ -199,7 +199,8 @@ const Esportes = ({dados}) => (
     />
     <CardBody>
     <Link href={dados.articles[4].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[4].title}>
       {dados.articles[4].title}
       </CardTitle>
       </Link>
@@ -219,7 +220,8 @@ const Esportes = ({dados}) => (
     />
     <CardBody>
     <Link href={dados.articles[5].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[5].title}>
       {dados.articles[5].title}
       </CardTitle>
       </Link>
@@ -259,7 +261,8 @@ const Esportes = ({dados}) => (
     <CardBody>
     
     <Link href={dados.articles[6].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[6].title}>
       {dados.articles[6].title}
       </CardTitle>
     </Link> 
@@ -280,7 +283,8 @@ const Esportes = ({dados}) => (
     />
     <CardBody>
     <Link href={dados.articles[7].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[7].title}>
       {dados.articles[7].title}
       </CardTitle>
       </Link>
@@ -300,7 +304,8 @@ const Esportes = ({dados}) => (
     />
     <CardBody>
     <Link href={dados.articles[8].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[8].title}>
       {dados.articles[8].title}
       </CardTitle>
       </Link>
@@ -333,7 +338,8 @@ const Esportes = ({dados}) => (
     <CardBody>
     
     <Link href={dados.articles[9].url} target='_blank'>
-      <CardTitle tag="h5">
+      <CardTitle tag="h5"
+      alt={dados.articles[9].title}>
       {dados.articles[9].title}
       </CardTitle>
     </Link> 
@@ -353,8 +359,9 @@ const Esportes = ({dados}) => (
       height="200px"
     />
     <CardBody>
-    <Link href={dados.articles[9].url} target='_blank'>
-      <CardTitle tag="h5">
+    <Link href={dados.articles[10].url} target='_blank'>
+      <CardTitle tag="h5"
+      alt={dados.articles[10].title}>
       {dados.articles[10].title}
       </CardTitle>
       </Link>
@@ -373,8 +380,9 @@ const Esportes = ({dados}) => (
       height="200px"
     />
     <CardBody>
-    <Link href={dados.articles[9].url} target='_blank'>
-      <CardTitle tag="h5">
+    <Link href={dados.articles[11].url} target='_blank'>
+      <CardTitle tag="h5"
+      alt={dados.articles[11].title}>
       {dados.articles[11].title}
       </CardTitle>
      </Link>
