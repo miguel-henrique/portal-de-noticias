@@ -1,13 +1,13 @@
 /* Carousel */
 
 .carousel {
-padding-bottom: 5%;
+padding-bottom: 5% !important;
 }
 /* End carousel */
 
 /* End carousel border */
 .carousel-inner{
-    border-radius: 10px;
+    border-radius: 10px !important;
 }
 /* End carousel border */
 
@@ -15,7 +15,7 @@ padding-bottom: 5%;
 button, input, optgroup, select, textarea {
     margin: 0;
     font-family: inherit;
-    font-size: 0;
+    font-size: 0 !important;
     line-height: inherit;
 }
 
