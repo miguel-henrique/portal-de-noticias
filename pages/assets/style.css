@@ -5,7 +5,8 @@
 
 /* Filtro sobre a imagem */
 .d-block, w-100{
-filter:brightness(0.5)
+filter: brightness(0.5) !important;
+height: 350px !important;
 }
 
 
