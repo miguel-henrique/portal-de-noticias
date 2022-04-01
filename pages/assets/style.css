@@ -1,0 +1,23 @@
+/* Carousel */
+
+.carousel {
+padding-bottom: 5%;
+}
+/* End carousel */
+
+/* End carousel border */
+.carousel-inner{
+    border-radius: 10px;
+}
+/* End carousel border */
+
+/* Carousel button caption */
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: 0;
+    line-height: inherit;
+}
+
+/* End arousel button caption */
+
