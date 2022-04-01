@@ -10,7 +10,7 @@ export default function Publicidade() {
     <Card body>
     
       <CardTitle tag="h5"><img src='https://pluswebb.com/wp-content/uploads/2021/03/cropped-favicon-180x180.png' width={20}></img>
-        Pluswebb - Consultoria especializada em SEO
+        Pluswebb - Consultoria em SEO
       </CardTitle>
       <CardImg
       alt="Card image cap"

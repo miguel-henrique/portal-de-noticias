@@ -1,9 +1,31 @@
+/* Container */
+.container{
+    margin-top: 2%
+}
+
+/* Filtro sobre a imagem */
+.d-block, w-100{
+filter:brightness(0.5)
+}
+
+
 /* Carousel */
 
+
 .carousel {
-padding-bottom: 5% !important;
+padding-bottom: 3% !important;
 }
 /* End carousel */
+
+.carousel-indicators {
+display: none;
+}
+
+/* Card image */
+.card-img-top{
+padding: 3% !important;
+border-radius: 20px !important;
+}
 
 /* End carousel border */
 .carousel-inner{
