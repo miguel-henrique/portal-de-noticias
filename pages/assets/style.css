@@ -11,16 +11,10 @@ height: 400px !important;
 
 
 /* Carousel */
-
-
 .carousel {
 padding-bottom: 3% !important;
 }
-/* End carousel */
 
-.carousel-indicators {
-display: none;
-}
 
 /* Card image */
 .card-img-top{
@@ -35,12 +29,25 @@ border-radius: 20px !important;
 /* End carousel border */
 
 /* Carousel button caption */
-button, input, optgroup, select, textarea {
+button.active {
     margin: 0;
     font-family: inherit;
     font-size: 0 !important;
     line-height: inherit;
 }
 
-/* End arousel button caption */
 
+.carousel{
+    font-size: 0px !important;
+}
+
+.me-auto.navbar-nav{
+    align-items: center !important;
+    font-weight: bold !important;
+}
+
+@media (min-width: 768px){
+    .me-auto.navbar-nav{
+        font-weight: normal !important;
+    } 
+}
