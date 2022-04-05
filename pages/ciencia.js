@@ -22,12 +22,12 @@ const Ciencia = ({dados}) => (
     {/* Inicio head */}
     
       <Head>
-        <title>Portal de Noticias - Ciências</title>
+        <title>Arvore News - Ciências</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
        
         <base href=""/>
-        <meta name="description" content="Portal de noticias consumindo api do Google"/>
-        <meta name="keywords" content="Portal de noticias, Ciências, noticias de ciência, noticias"/>
+        <meta name="description" content="Arvore News consumindo api do Google"/>
+        <meta name="keywords" content="Arvore News, Ciências, noticias de ciência, noticias"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="geo.position" content="-23.6873165,-46.7046827"/>
         <meta name="geo.placename" content="São Paulo-SP"/>
@@ -37,15 +37,15 @@ const Ciencia = ({dados}) => (
         <meta name="rating" content="General"/>
         <meta name="revisit-after" content="7 days"/>
         <link rel="canonical" href=""/>
-        <meta name="author" content="Portal de Noticias"/>	
-        <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/000000/logout-rounded.png" />
+        <meta name="author" content="Arvore News"/>	
+        <link rel="shortcut icon" href="https://img.icons8.com/flat-round/64/000000/tree.png" />
         
         <meta property="og:region" content="Brasil"/>
-        <meta property="og:title" content="Portal de Noticias - Ciências"/>
+        <meta property="og:title" content="Arvore News - Ciências"/>
         <meta property="og:type" content="article"/>
         <meta property="og:url" content=""/>
-        <meta property="og:description" content="Portal de noticias consumindo API do Google"/>
-        <meta property="og:site_name" content="Portal de Noticias"/>
+        <meta property="og:description" content="Arvore News consumindo API do Google"/>
+        <meta property="og:site_name" content="Arvore News"/>
       </Head>
     
 

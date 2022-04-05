@@ -15,8 +15,8 @@ export default function Barra() {
     light
   >
     <NavbarBrand href="/">
-    <img width="30px" src="https://img.icons8.com/fluency/48/000000/logout-rounded.png"/>
-      Portal de Noticias
+    <img width="30px" src="https://img.icons8.com/flat-round/64/000000/tree.png"/>
+      Arvore News
     </NavbarBrand>
     <NavbarToggler onClick={() => { setIsOpen(!isOpen) }} />
     <Collapse isOpen={isOpen} navbar>
