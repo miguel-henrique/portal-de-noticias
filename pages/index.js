@@ -52,7 +52,6 @@ const Api = ({dados}) => (
 
 
 <Barra></Barra>
-{console.log(dados)}
 <Container>
     
 

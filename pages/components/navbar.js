@@ -1,6 +1,6 @@
 import React from 'react';
 import { Input, Offcanvas, Button, OffcanvasHeader, OffcanvasBody, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, NavLink, Nav, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText } from 'reactstrap';
-
+import Search from './search';
 
 
 export default function Barra() {
@@ -62,6 +62,7 @@ export default function Barra() {
       
       </Nav>
       
+  <Search placeholder="Enter a Book Name..." data={BookData} />
   
       
     </Collapse>
@@ -71,3 +72,13 @@ export default function Barra() {
   )
 }
 
+
+const BookData= async val => {
+  this.setState({ loading: true });
+  const res = await axios(
+    `https://newsapi.org/v2/everything?q=${val}&apiKey=c6595ed7516847f4a77b8fc01f2f9e6f`
+  );
+  const movies = await res.data.results;
+
+  this.setState({ movies, loading: false });
+};
