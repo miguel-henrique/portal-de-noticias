@@ -16,6 +16,7 @@ class App extends Component {
       `https://newsapi.org/v2/everything?q=${val}&apiKey=c6595ed7516847f4a77b8fc01f2f9e6f`
     );
     const movies = res;
+    console.log(movies)
 
     this.setState({ movies, loading: false });
   };

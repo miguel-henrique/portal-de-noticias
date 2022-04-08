@@ -62,8 +62,8 @@ export default function Barra() {
       
       </Nav>
       
-  <Search placeholder="Enter a Book Name..." data={BookData} />
   
+  <Search></Search>
       
     </Collapse>
   </Navbar>
@@ -72,13 +72,3 @@ export default function Barra() {
   )
 }
 
-
-const BookData= async val => {
-  this.setState({ loading: true });
-  const res = await axios(
-    `https://newsapi.org/v2/everything?q=${val}&apiKey=c6595ed7516847f4a77b8fc01f2f9e6f`
-  );
-  const movies = await res.data.results;
-
-  this.setState({ movies, loading: false });
-};
