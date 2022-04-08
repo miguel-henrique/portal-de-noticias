@@ -1,58 +1,51 @@
-import React, { useState } from "react";
+import React, { Component } from 'react';
+import axios from 'axios';
 
-function Search({ placeholder, data }) {
-  const [filteredData, setFilteredData] = useState([]);
-  const [wordEntered, setWordEntered] = useState("");
+import { search } from './utils' 
 
-  const handleFilter = (event) => {
-    const searchWord = event.target.value;
-    setWordEntered(searchWord);
-    const newFilter = data.filter((value) => {
-      return value.title.toLowerCase().includes(searchWord.toLowerCase());
-    });
+class App extends Component {
+  state = {
+    movies: null,
+    loading: false,
+    value: ''
+  };
 
-    if (searchWord === "") {
-      setFilteredData([]);
-    } else {
-      setFilteredData(newFilter);
+  search = async val => {
+    this.setState({ loading: true });
+    const res = await search(
+      `https://newsapi.org/v2/everything?q=${val}&apiKey=c6595ed7516847f4a77b8fc01f2f9e6f`
+    );
+    const movies = res;
+
+    this.setState({ movies, loading: false });
+  };
+
+  onChangeHandler = async e => {
+    this.search(e.target.value);
+    this.setState({ value: e.target.value });
+  };
+
+  get renderMovies() {
+    let movies = <h1>There's no movies</h1>;
+    if (this.state.movies) {
+      movies = <Movies list={this.state.movies} />;
     }
-  };
 
-  const clearInput = () => {
-    setFilteredData([]);
-    setWordEntered("");
-  };
+    return movies;
+  }
 
-  return (
-    <div className="search">
-      <div className="searchInputs">
+  render() {
+    return (
+      <div>
         <input
-          type="text"
-          placeholder={placeholder}
-          value={wordEntered}
-          onChange={handleFilter}
+          value={this.state.value}
+          onChange={e => this.onChangeHandler(e)}
+          placeholder="Type something to search"
         />
-        {/* <div className="searchIcon">
-          {filteredData.length === 0 ? (
-            <SearchIcon />
-          ) : (
-            <CloseIcon id="clearBtn" onClick={clearInput} />
-          )}
-        </div> */}
+        {this.renderMovies}
       </div>
-      {filteredData.length != 0 && (
-        <div className="dataResult">
-          {filteredData.slice(0, 15).map((value, key) => {
-            return (
-              <a className="dataItem" href={value.link} target="_blank">
-                <p>{value.title} </p>
-              </a>
-            );
-          })}
-        </div>
-      )}
-    </div>
-  );
+    );
+  }
 }
 
-export default Search;
+export default App;
