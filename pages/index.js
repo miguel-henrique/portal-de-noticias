@@ -5,6 +5,8 @@ import Publicidade from './components/publicidade';
 import Link from "next/link";
 import Head from 'next/head'
 
+import Footer from './components/footer';
+
 import axios from 'axios';
 
 
@@ -409,11 +411,12 @@ const Api = ({dados}) => (
 
   {/* Fim Cards */}
 
-
-
-  
+ 
 </Container>
+
+<Footer></Footer>
 </div>
+
 
 );
 

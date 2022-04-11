@@ -59,11 +59,11 @@ export default function Barra() {
           Tecnologia
           </NavLink>
         </NavItem>
+
+        <Search></Search>
       
       </Nav>
       
-  
-  <Search></Search>
       
     </Collapse>
   </Navbar>
