@@ -4,7 +4,7 @@ export const truncStr = (string, limit) => {
     return string.length > limit
       ? string
           .trim()
-          .substring(0, limit - 3)
+          .substring(0, limit - 10)
           .trim() + "..."
       : string;
   };
