@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import axios from "axios";
 
+import { Button, CardText, CardSubtitle, CardGroup, Card, CardImg, CardBody, CardTitle, Container, Row, Col, UncontrolledCarousel } from 'reactstrap';
+
+
+
 import { search } from "./utils";
 import Movies from "./Movies";
 
@@ -14,7 +18,7 @@ class App extends Component {
   search = async val => {
     this.setState({ loading: true });
     const articles = await search(
-      `https://newsapi.org/v2/everything?q=${val}&apiKey=c6595ed7516847f4a77b8fc01f2f9e6f`
+      `https://newsapi.org/v2/top-headlines?q=${val}&country=br&sortBy=popularity&apiKey=c6595ed7516847f4a77b8fc01f2f9e6f`
     );
     const movies = articles;
 
@@ -38,12 +42,15 @@ class App extends Component {
   render() {
     return (
       <div>
+
+        <Container>
         <input
           value={this.state.value}
           onChange={e => this.onChangeHandler(e)}
           placeholder="Type something to search"
         />
         {this.renderMovies}
+        </Container>
       </div>
     );
   }
