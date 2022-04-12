@@ -6,7 +6,7 @@ import { Button, CardText, CardSubtitle, CardGroup, Card, CardImg, CardBody, Car
 
 
 import { search } from "./utils";
-import Movies from "./Movies";
+import Movies from "./movies";
 
 class App extends Component {
   state = {
