@@ -1,6 +1,6 @@
 import React from "react";
 
-import Movie from "./movie";
+import Movie from "./Movie";
 
 const Movies = ({ list }) => {
   let cards = <h3>Loading...</h3>;

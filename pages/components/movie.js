@@ -3,16 +3,17 @@ import React from "react";
 import { truncStr } from "./utils";
 
 const MovieCard = props => {
-  const { title, articles } = props.item;
+  const { title, vote_average } = props.item;
 
   return (
     <div>
+      <div>
+        <span >{vote_average}</span>
+      </div>
 
       <div>
-        <h5>{movie.articles[0].title}</h5>
+        <h3 >{truncStr(title, 19)}</h3>
       </div>
-        <h3>{truncStr(title, 19)}</h3>
-
     </div>
   );
 };
