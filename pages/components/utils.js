@@ -56,5 +56,3 @@ const makeRequestCreator = () => {
 }
 
 export const search = makeRequestCreator()
-
-export default search;
