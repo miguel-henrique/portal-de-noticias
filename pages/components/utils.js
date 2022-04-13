@@ -1,5 +1,8 @@
 import axios from 'axios';
 
+
+
+
 export const truncStr = (string, limit) => {
     return string.length > limit
       ? string
@@ -53,3 +56,5 @@ const makeRequestCreator = () => {
 }
 
 export const search = makeRequestCreator()
+
+export default search;
