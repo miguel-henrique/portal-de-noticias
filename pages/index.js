@@ -4,6 +4,7 @@ import Barra from "./components/navbar";
 import Publicidade from './components/publicidade';
 import Link from "next/link";
 import Head from 'next/head'
+import Search from './components/search'
 
 import Footer from './components/footer';
 
@@ -52,8 +53,12 @@ const Api = ({dados}) => (
   {/* Fim head */} 
 
 
+<Search></Search>
+
 
 <Barra></Barra>
+
+
 <Container>
     
 
@@ -432,5 +437,18 @@ Api.getInitialProps = async () =>{
     return { dados: response.data}
 
 }
+
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+  document.getElementById("main").style.marginLeft = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+
 
 export default Api
