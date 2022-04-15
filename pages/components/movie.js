@@ -3,7 +3,7 @@ import React from "react";
 import { Button, CardText, CardSubtitle, CardGroup, Card, CardImg, CardBody, CardTitle, Container, Row, Col, UncontrolledCarousel } from 'reactstrap';
 import Link from "next/link";
 
-import { truncStr } from "./utils";
+import { truncstr } from "./utils";
 
 const MovieCard = props => {
   const { title, urlToImage, url, description } = props.item;
@@ -40,7 +40,7 @@ const MovieCard = props => {
 
 
       <div>
-        <h3 >{truncStr(title)}</h3>
+        <h3 >{truncstr(title)}</h3>
       </div>
     </div>
   );
