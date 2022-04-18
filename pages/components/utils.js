@@ -8,7 +8,7 @@ export const truncStr = (string, limit) => {
           .trim() + "..."
       : string;
   };
-
+  
 
 const resources = {};
 
