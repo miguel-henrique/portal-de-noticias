@@ -31,7 +31,7 @@ class App extends Component {
   };
 
   get renderMovies() {
-    let movies = <h1>There's no movies</h1>;
+    let movies = <h1>Test</h1>;
     if (this.state.movies) {
       movies = <Movies list={this.state.movies} />;
     }

@@ -52,10 +52,6 @@ const Api = ({dados}) => (
 
   {/* Fim head */} 
 
-
-<Search></Search>
-
-
 <Barra></Barra>
 
 
@@ -90,7 +86,8 @@ const Api = ({dados}) => (
 
   {/* Inicios Cards */}
 
-
+  <Search></Search>
+  
   <CardGroup>
   <Card>
   

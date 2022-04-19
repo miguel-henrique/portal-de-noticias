@@ -1,3 +1,6 @@
+import { Button, CardText, CardSubtitle, CardGroup, Card, CardImg, CardBody, CardTitle, Container, Row, Col, UncontrolledCarousel } from 'reactstrap';
+import Link from "next/link";
+
 import React from "react";
 
 import Movie from "./movie";
@@ -10,9 +13,9 @@ const Movies = ({ list }) => {
   }
 
   return (
-    <div >
-      <div >{cards}</div>
-    </div>
+    <Container >
+      <Card >{cards}</Card>
+    </Container>
   );
 };
 
