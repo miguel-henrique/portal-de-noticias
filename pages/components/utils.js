@@ -52,4 +52,6 @@ const makeRequestCreator = () => {
   }
 }
 
-export const search = makeRequestCreator()
+const search = makeRequestCreator();
+
+export default search
