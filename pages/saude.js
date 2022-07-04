@@ -374,7 +374,7 @@ const Saude = ({dados}) => (
   </Card>
   <Card>
     <CardImg
-      alt="Card image cap"
+      alt={dados.articles[11].title}
       src={dados.articles[11].urlToImage}
       top
       width="100px"

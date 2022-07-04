@@ -8,16 +8,18 @@ import { Button, CardText, CardSubtitle, CardGroup, Card, CardImg, CardBody, Car
 import { search } from "./utils";
 import Movies from "./movies";
 
-class App extends Component {
+class Search extends Component {
   state = {
     movies: null,
     loading: false,
     value: ""
   };
 
+
+  //Make the
   search = async val => {
     this.setState({ loading: true });
-    const articles = await search(
+    const articles = await axios.get(
       `https://newsapi.org/v2/top-headlines?q=${val}&country=br&sortBy=popularity&apiKey=c6595ed7516847f4a77b8fc01f2f9e6f`
     );
     const movies = articles;
@@ -25,13 +27,17 @@ class App extends Component {
     this.setState({ movies, loading: false });
   };
 
+
+
+ //Handle with input
   onChangeHandler = async e => {
     this.search(e.target.value);
     this.setState({ value: e.target.value });
   };
 
+
   get renderMovies() {
-    let movies = <h1>Test</h1>;
+    let movies = <h1>Erro</h1>;
     if (this.state.movies) {
       movies = <Movies list={this.state.movies} />;
     }
@@ -56,4 +62,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Search;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Input, Offcanvas, Button, OffcanvasHeader, OffcanvasBody, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, NavLink, Nav, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText } from 'reactstrap';
 
-
+import Search from './search';
 
 export default function Barra() {
 
@@ -60,9 +60,10 @@ export default function Barra() {
           </NavLink>
         </NavItem>
 
+
       
       </Nav>
-      
+      <Search></Search>
       
     </Collapse>
   </Navbar>

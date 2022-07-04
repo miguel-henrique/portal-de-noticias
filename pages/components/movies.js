@@ -5,7 +5,8 @@ import React from "react";
 
 import Movie from "./movie";
 
-const Movies = ({ list }) => {
+
+function Movies ({ list }) {
   let cards = <h3>Loading...</h3>;
 
   if (list) {
@@ -18,5 +19,13 @@ const Movies = ({ list }) => {
     </Container>
   );
 };
+
+/* const arr = [1, 2, 3];
+
+const result = arr.map(element => {
+  return element + 1;
+});
+
+console.log(result); // 👉️ [2, 3, 4] */
 
 export default Movies;
