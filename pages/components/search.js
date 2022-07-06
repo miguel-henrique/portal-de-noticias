@@ -22,7 +22,9 @@ class Search extends Component {
     const articles = await axios.get(
       `https://newsapi.org/v2/top-headlines?q=${val}&country=br&sortBy=popularity&apiKey=c6595ed7516847f4a77b8fc01f2f9e6f`
     );
-    const movies = articles;
+    const news = articles;
+    const movies = news.data.articles;
+    console.log(movies);
 
     this.setState({ movies, loading: false });
   };

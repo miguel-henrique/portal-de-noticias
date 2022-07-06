@@ -6,11 +6,21 @@ import React from "react";
 import Movie from "./movie";
 
 
-function Movies ({ list }) {
+function Movies ( list ) {
+
+  //const result = Array.from(list).map(element => element + 1);
+
+  {console.log(list)};
+
+  const dataResult = Object.entries(list).map(([key, value]) => ({ [key]: value }));
+
+console.log(dataResult);
+
   let cards = <h3>Loading...</h3>;
 
-  if (list) {
-    cards = list.map((m, i) => <Movie key={i} item={m} />);
+
+  if (dataResult) {
+    cards = dataResult.map((m, i) => <Movie key={i} item={m} />);
   }
 
   return (
