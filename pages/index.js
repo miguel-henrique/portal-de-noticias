@@ -83,10 +83,15 @@ const Api = ({dados}) => (
    />
    {/* Fim Carousel */}
 
+{/* Search */}
+   <Search></Search>
+{/* Fim Search */}
+
+
 
   {/* Inicios Cards */}
 
-  <Search></Search>
+
   
   <CardGroup>
   <Card>

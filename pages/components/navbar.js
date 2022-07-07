@@ -63,7 +63,6 @@ export default function Barra() {
 
       
       </Nav>
-      <Search></Search>
       
     </Collapse>
   </Navbar>

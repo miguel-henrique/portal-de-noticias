@@ -1,4 +1,4 @@
-import axios from 'axios';
+/* import axios from 'axios';
 
 export const truncStr = (string, limit) => {
     return string.length > limit
@@ -54,4 +54,4 @@ const makeRequestCreator = () => {
 
 const search = makeRequestCreator();
 
-export default search
+export default search */

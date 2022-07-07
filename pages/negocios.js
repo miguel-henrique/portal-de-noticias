@@ -84,6 +84,11 @@ const Negocios = ({dados}) => (
    {/* Fim Carousel */}
 
 
+
+{/* Search */}
+<Search></Search>
+{/* Fim Search */}
+
   {/* Inicios Cards */}
 
 
