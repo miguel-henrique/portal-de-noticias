@@ -5,6 +5,7 @@ import Barra from "./components/navbar";
 import Link from "next/link";
 import Head from 'next/head'
 import Publicidade from './components/publicidade';
+import Search from './components/search'
 
 
 import axios from 'axios';
@@ -82,6 +83,12 @@ const Saude = ({dados}) => (
     ]}
    />
    {/* Fim Carousel */}
+
+
+{/* Search */}
+<Search></Search>
+{/* Fim Search */}
+
 
 
   {/* Inicios Cards */}
