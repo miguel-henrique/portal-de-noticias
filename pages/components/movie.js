@@ -19,7 +19,15 @@ const result = arr.map(element => {
 
 console.log(result); // 👉️ [2, 3, 4] */
 
-const news = props.item.list.map((m, i) => 
+
+const articles = props.item.list;
+
+articles.defaultProps = {
+  m: "Rahul",
+  i: "deepblue"
+}
+
+const news = props.articles.map((m, i) => 
 <div key={i} item={m}>
 <CardGroup>
   <Card>
