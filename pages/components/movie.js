@@ -27,8 +27,10 @@ articles.defaultProps = {
   i: "deepblue"
 }
 
-const news = props.articles.map((m, i) => 
+const news = articles.map((m, i) => 
 <div key={i} item={m}>
+
+
 <CardGroup>
   <Card>
   
