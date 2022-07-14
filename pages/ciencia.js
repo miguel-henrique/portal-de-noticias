@@ -83,6 +83,9 @@ const Ciencia = ({dados}) => (
    />
    {/* Fim Carousel */}
 
+{/* Search */}
+   <Search></Search>
+{/* Fim Search */}
 
   {/* Inicios Cards */}
 
