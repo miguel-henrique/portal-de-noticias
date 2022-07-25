@@ -3,14 +3,14 @@ import { Input, Offcanvas, Button, OffcanvasHeader, OffcanvasBody, Navbar, Navba
 
 
 
-export default function Barra() {
+export default function Expandnav() {
 
     const [isOpen, setIsOpen] = React.useState(false);
   return (
 
     
     <div>
-        <Navbar color="light" light expand="md">
+        <Navbar  expand="md">
             <NavbarBrand href="/">Brand</NavbarBrand>
             <NavbarToggler onClick={() => { setIsOpen(!isOpen) }} />
             <Collapse isOpen={isOpen} navbar>
