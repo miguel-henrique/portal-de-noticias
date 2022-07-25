@@ -2,8 +2,8 @@ import React from 'react';
 import { Container, Row, Col, } from 'reactstrap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faSearch, faCoffee, faAmbulance } from '@fortawesome/free-solid-svg-icons'
-import { faFacebookF, faLinkedin, faInstagram, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
+import { faPlane, faSearch, faCoffee, faAmbulance } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF, faLinkedin, faInstagram, faLinkedinIn, faTelegram} from '@fortawesome/free-brands-svg-icons'
 
 export default function Footer() {
 
@@ -61,7 +61,7 @@ export default function Footer() {
                         <div className="subscribe-form">
                             <form action="#">
                                 <input type="text" placeholder="Email Address"/>
-                                <button><i className="fab fa-telegram-plane"></i></button>
+                                <button><a><FontAwesomeIcon style={{ fontSize: 20, color: "white" }} icon={faTelegram} /></a></button>
                             </form>
                         </div>
                     </div>
