@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.next
+/old_assets
 /.pnp
 .pnp.js
 
