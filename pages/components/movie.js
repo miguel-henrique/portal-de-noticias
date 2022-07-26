@@ -5,11 +5,8 @@ import Link from "next/link";
 
 //import { truncStr } from "./utils.js";
 
-const MovieCard = props => {
- // const { title, urlToImage, url, description } = props.item;
-
-
-  //console.log(props.item.list);
+const MovieCard = (props) => {
+//const { title, urlToImage, url, description } = props.item;
 
   /* const arr = [1, 2, 3];
 

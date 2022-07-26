@@ -6,6 +6,8 @@ import React from "react";
 import Movie from "./movie";
 
 
+const list = null;
+
 function Movies ( list ) {
 
   //const result = Array.from(list).map(element => element + 1);
