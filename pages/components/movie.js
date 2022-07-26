@@ -19,13 +19,12 @@ const result = arr.map(element => {
 
 console.log(result); // 👉️ [2, 3, 4] */
 
-
-const articles = props.item.list;
-
-/* articles.defaultProps = {
+articles = {
   m: "Rahul",
   i: "deepblue"
-} */
+}
+
+const articles = props.item.list;
 
 const news = articles.map((m, i) => 
 <div key={i} item={m}>

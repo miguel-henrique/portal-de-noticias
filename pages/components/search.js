@@ -40,7 +40,7 @@ class Search extends Component {
 
   get renderMovies() {
     let movies = <h1>Erro</h1>;
-    if (this.state.movies) {
+    if (this.state.movies !== null) {
       movies = <Movies list={this.state.movies} />;
     }
 

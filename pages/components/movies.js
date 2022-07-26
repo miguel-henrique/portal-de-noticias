@@ -14,11 +14,12 @@ function Movies ( list ) {
 
   const dataResult = Object.entries(list).map(([key, value]) => ({ [key]: value }));
 
-  console.log(dataResult);
+console.log(dataResult);
 
   let cards = <h3>Loading...</h3>;
 
-  if (dataResult !== null) {
+
+  if (dataResult) {
     cards = dataResult.map((m, i) => <Movie key={i} item={m} />);
   }
 
