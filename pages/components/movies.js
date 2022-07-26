@@ -6,8 +6,6 @@ import React from "react";
 import Movie from "./movie";
 
 
-const list = null;
-
 function Movies ( list ) {
 
   //const result = Array.from(list).map(element => element + 1);
@@ -21,7 +19,7 @@ console.log(dataResult);
   let cards = <h3>Loading...</h3>;
 
 
-  if (dataResult) {
+  if (dataResult != null) {
     cards = dataResult.map((m, i) => <Movie key={i} item={m} />);
   }
 
