@@ -5,7 +5,7 @@ import { Button, CardText, CardSubtitle, CardGroup, Card, CardImg, CardBody, Car
 
 
 
-import { search } from "./utils";
+//import { search } from "./utils";
 import Movies from "./movies";
 
 class Search extends Component {
