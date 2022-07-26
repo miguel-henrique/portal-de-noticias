@@ -18,7 +18,7 @@ function Movies ( list ) {
 
   let cards = <h3>Loading...</h3>;
 
-  if (dataResult !== undefined) {
+  if (dataResult !== null) {
     cards = dataResult.map((m, i) => <Movie key={i} item={m} />);
   }
 
