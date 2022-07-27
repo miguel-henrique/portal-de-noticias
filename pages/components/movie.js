@@ -6,7 +6,7 @@ import Link from "next/link";
 
 //import { truncStr } from "./utils.js";
 
-const MovieCard = props => {
+const MovieCard = (list) => {
  //const { title, urlToImage, url, description } = props.item.list;
 
 
@@ -22,7 +22,7 @@ console.log(result); // 👉️ [2, 3, 4] */
 
 
 //const articles = props.item.list;
-const {m, i} = props.item.list
+//const {m, i} = props.item.list
 
 /* articles.defaultProps = {
   m: null,
@@ -66,7 +66,7 @@ const {m, i} = props.item.list
 
   return (
     <div>
-{props.item.list.map((m, i) => 
+{list.item.list.map((m, i) => 
 <div key={i} item={m}>
 
 
