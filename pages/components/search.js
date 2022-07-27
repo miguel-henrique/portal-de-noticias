@@ -3,9 +3,6 @@ import axios from "axios";
 
 import { Button, CardText, CardSubtitle, CardGroup, Card, CardImg, CardBody, CardTitle, Container, Row, Col, UncontrolledCarousel } from 'reactstrap';
 
-
-
-//import { search } from "./utils";
 import Movies from "./movies";
 
 class Search extends Component {
@@ -16,7 +13,7 @@ class Search extends Component {
   };
 
 
-  //Make the
+  //Request the data
   search = async val => {
     this.setState({ loading: true });
     const articles = await axios.get(
@@ -28,8 +25,6 @@ class Search extends Component {
 
     this.setState({ movies, loading: false });
   };
-
-
 
  //Handle with input
   onChangeHandler = async e => {
