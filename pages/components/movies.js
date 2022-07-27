@@ -9,8 +9,6 @@ function Movies ( list ) {
 
   {console.log(list)};
 
-  //const dataResult = list;
-
  const dataResult = Object.entries(list).map(([key, value]) => ({ [key]: value }));
 
 console.log(dataResult);

@@ -5,13 +5,13 @@ import { Button, CardText, CardSubtitle, CardGroup, Card, CardImg, CardBody, Car
 
 import Movies from "./movies";
 
+
 class Search extends Component {
   state = {
     movies: null,
     loading: false,
     value: ""
   };
-
 
   //Request the data
   search = async val => {
@@ -35,7 +35,7 @@ class Search extends Component {
 
   get renderMovies() {
     let movies = <h1>Erro</h1>;
-    if (this.state.movies) {
+    if (this.state.movies != null) {
       movies = <Movies list={this.state.movies} />;
     }
 
