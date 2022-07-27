@@ -4,8 +4,11 @@ import { Button, CardText, CardSubtitle, CardGroup, Card, CardImg, CardBody, Car
 import Link from "next/link";
 
 
-const MovieCard = (data) => {
+const MovieCard = ( data ) => {
 
+
+  //const dataResult = Object.entries(data).map(([key, value]) => ({ [key]: value }));
+ 
   return (
     <div>
 {data.item.list.map((m, i) => 
