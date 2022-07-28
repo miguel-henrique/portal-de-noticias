@@ -2,6 +2,9 @@
   "name": "noticias",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "npm": "6.x"
+  },
   "main": "index.js",
   "scripts": {
     "dev": "next dev",

@@ -4,12 +4,12 @@ import React from "react";
 import Movie from "./movie";
 
 
-function Movies ( list ) {
+function Movies ( props ) {
 
 
-  {console.log(list)};
+  {console.log(props)};
 
- const dataResult = Object.entries(list).map(([key, value]) => ({ [key]: value }));
+ const dataResult = Object.entries(props).map(([key, value]) => ({ [key]: value }));
 
 console.log(dataResult);
 
