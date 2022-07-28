@@ -1,6 +1,10 @@
 {
   "name": "noticias",
   "version": "1.0.0",
+  "engines" : { 
+    "npm" : ">=8.13.2",
+    "node" : ">=16.13.0"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
