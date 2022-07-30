@@ -1,10 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { Button, CardText, CardSubtitle, CardGroup, Card, CardImg, CardBody, CardTitle, Container, Row, Col, UncontrolledCarousel } from 'reactstrap';
-import Barra from "./components/navbar";
+import Barra from "/components/navbar";
 import Link from "next/link";
 import Head from 'next/head'
-import Publicidade from './components/publicidade';
+import Publicidade from '/components/publicidade';
 
 import axios from 'axios';
 
