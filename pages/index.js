@@ -1,12 +1,12 @@
 import React from 'react';
 import { Button, CardText, CardSubtitle, CardGroup, Card, CardImg, CardBody, CardTitle, Container, Row, Col, UncontrolledCarousel } from 'reactstrap';
-import Barra from "./components/navbar";
-import Publicidade from './components/publicidade';
+import Barra from "/components/navbar";
+import Publicidade from '/components/publicidade';
 import Link from "next/link";
 import Head from 'next/head'
-import Search from './components/search'
+import Search from '/components/search'
 
-import Footer from './components/footer';
+import Footer from '/components/footer';
 
 import axios from 'axios';
 
